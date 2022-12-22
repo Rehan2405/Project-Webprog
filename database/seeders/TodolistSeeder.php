@@ -25,43 +25,43 @@ class TodolistSeeder extends Seeder
         ]);
 
         Todolist::create([
-            'image' => 'Pantai-Mawun.jpg',
-            'list' => 'Berenang, Membuat istana pasir'
+            'image' => 'Sunset-di-Karimun-Jawa.jpg',
+            'list' => 'Snorkeling, Berenan bersama Hiu, Diving, Island Hopping'
         ]);
 
         Todolist::create([
-            'image' => 'Pantai-Mawun.jpg',
-            'list' => 'Berenang, Membuat istana pasir'
+            'image' => 'Senja-di-Pantai-Tablolong.jpg',
+            'list' => 'Menikmati senja, Mengambil gambar'
         ]);
 
         Todolist::create([
-            'image' => 'Pantai-Mawun.jpg',
-            'list' => 'Berenang, Membuat istana pasir'
+            'image' => 'Pulau-Mekko.jpg',
+            'list' => 'Berenang, Menikmati senja di dermaga'
         ]);
 
         Todolist::create([
-            'image' => 'Pantai-Mawun.jpg',
-            'list' => 'Berenang, Membuat istana pasir'
+            'image' => 'pantai-lemo-lemo.jpg',
+            'list' => 'Mengambil gambar, Menikmati senja'
         ]);
 
         Todolist::create([
-            'image' => 'Pantai-Mawun.jpg',
-            'list' => 'Berenang, Membuat istana pasir'
+            'image' => 'pantai-papuma.jpg',
+            'list' => 'Menikmati ikan bakar di pinggir pantai, Melihat pemandangan dari Siti Hinggil'
         ]);
 
         Todolist::create([
-            'image' => 'Pantai-Mawun.jpg',
-            'list' => 'Berenang, Membuat istana pasir'
+            'image' => 'pulau-Palambak.jpg',
+            'list' => 'Berkeliling pulau, Mengambil gambar, Snorkeling'
         ]);
 
         Todolist::create([
-            'image' => 'Pantai-Mawun.jpg',
-            'list' => 'Berenang, Membuat istana pasir'
+            'image' => 'Pantai-Maluk.jpg',
+            'list' => 'Surfing, Berenang, Bermain kano, Menikmati masakan laut di pinggir pantai'
         ]);
 
         Todolist::create([
-            'image' => 'Pantai-Mawun.jpg',
-            'list' => 'Berenang, Membuat istana pasir'
+            'image' => 'Pink-beach.jpg',
+            'list' => 'Berenang, Snorkeling, Diving, Menikmati indahnya pantai dari salah satu ujung bukitnya'
         ]);
     }
 }
