@@ -1,0 +1,1 @@
+<?php /**PATH D:\Project-Webprog\resources\views/home.blade.php ENDPATH**/ ?>
