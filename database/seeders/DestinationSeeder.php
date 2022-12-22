@@ -19,10 +19,12 @@ class DestinationSeeder extends Seeder
             'todolist_id' => 1,
             'title' => 'Pantai Mawun, Inilah Destinasi Favorit Saya di Lombok',
             // https://lostpacker.com/pantai-mawun/
-            'desc' => 'Ngomongin soal pantai di Indonesia ini memang ga akan ada habisnya. Namun, kalau boleh dibilang pantai idaman saya ketika berkunjung ke daerah Lombok adalah Pantai Mawun.
-            Sebuah hamparan pantai dengan pasir putih yang landai dan luas disertai jernihnya air laut memukau indera penglihatan saya ketika pertama kali menjejakkan kaki di pantai ini. Duduk di hamparan pasir putih tepat di bawah pohon besar ini seolah saya sedang berada di sebuah resort mahal di Maldives.
-            Satu hal yang lebih membuat saya tertarik dengan pantai ini adalah MASIH SEPI. Hanya terlihat seorang wisatawan asing sedang asik membaca buku sambil tiduran tidak jauh dari tempat saya duduk.
-            Karena berada pada sebuah teluk, pantai ini sangat cocok untuk berenang dan beberapa olahraga air lainnya.',
+            'desc' => 'Ngomongin soal pantai di Indonesia ini memang ga akan ada habisnya. Namun, kalau boleh dibilang pantai idaman saya
+            ketika berkunjung ke daerah Lombok adalah Pantai Mawun. Sebuah hamparan pantai dengan pasir putih yang landai dan luas disertai
+            jernihnya air laut memukau indera penglihatan saya ketika pertama kali menjejakkan kaki di pantai ini. Duduk di hamparan pasir
+            putih tepat di bawah pohon besar ini seolah saya sedang berada di sebuah resort mahal di Maldives. Satu hal yang lebih membuat
+            saya tertarik dengan pantai ini adalah MASIH SEPI. Hanya terlihat seorang wisatawan asing sedang asik membaca buku sambil tiduran
+            tidak jauh dari tempat saya duduk.',
             'image' => 'Pantai-Mawun.jpg'
         ]);
 
@@ -32,14 +34,108 @@ class DestinationSeeder extends Seeder
             'title' => 'Akhirnya ke Wakatobi (lagi)!',
             // https://wiranurmansyah.com/terios-7-wonders-akhirnya-ke-wakatobi-lagi
             'desc' => 'Setelah bergeriliya selama sekitar 3000 km dari Manado hingga Kendari, akhirnya kami pun tiba di sudut Sulawesi Tenggara,
-            kepulauan Wakatobi. Satu dari tujuh mobil terios diberangkatkan dengan kapal phinisi, 22 jam perjalanan dari Kendari. Sedangkan kami,
-            tentu saja naik pesawat yang hanya memakan waktu setengah jam, hehe. Tahun 2012 saya sempat ke Wakatobi, juga mengunjungi pulau yang
-            sama, Pulau Tomia. Tomia adalah salah satu gugusan kepulauan Wakatobi (Wangi-wangi, Kaledupa, Tomia, Binongko) yang punya keindahan
-            bawah laut terindah negeri ini. Dua tahun lalu, tak ada geliat pariwisata disini. Tidak ada dive center (kecuali Waktobi Dive Resort
-            yang punya orang asing, dan harganya selangit), tak ada warung makan, dan apapun yang menunjukan aktifitas pariwisata.',
+            kepulauan Wakatobi. Satu dari tujuh mobil terios diberangkatkan dengan kapal phinisi, 22 jam perjalanan dari Kendari. Sedangkan
+            kami, tentu saja naik pesawat yang hanya memakan waktu setengah jam, hehe.',
             'image' => 'wakatobi.jpg'
         ]);
 
-        
+        Destination::create([
+            'review_id' => 3,
+            'todolist_id' => 3,
+            'title' => 'Trip ke Karimunjawa, Melihat Pesona Keindahan Pulau yang Tersamar',
+            // https://lostpacker.com/trip-ke-karimunjawa/
+            'desc' => 'Bus yang membawa kami dari Jakarta untuk Trip ke Karimunjawa pun berangkat saat malam mulai menjelang. Perjalanan
+            panjang ini akan kami tempuh kurang lebih 12 jam hingga tiba di Kota Jepara yang menjadi pintu masuk ke Kepulauan Karimun Jawa.
+
+            Tepat pukul 06.00 pagi kami sampai di pelabuhan penumpang Kartini di samping objek wisata Taman Kartini Jepara.
+
+            Namun, tak berapa lama lagi kami akan menghadapi sebuah perjalanan yang cukup panjang lagi menuju Karimun.',
+            'image' => 'Sunset-di-Karimun-Jawa.jpg'
+        ]);
+
+        Destination::create([
+            'review_id' => 4,
+            'todolist_id' => 4,
+            'title' => 'Cerita Senja di Pantai Tablolong Kupang yang Luar Biasa Indah',
+            // https://lostpacker.com/cerita-senja-di-pantai-tablolong-kupang/
+            'desc' => 'Selama saya berjalan dan berpetualang di Nusantara tercinta ini, saya selalu punya cerita senja yang tak pernah
+            bosan saya nikmati. Misalnya saja di Nusa Tenggara Timur. Dari hampir semua sudut yang pernah saya jelajahi, selalu memanjakan
+            indera saya dengan senjanya yang memukau. Salah satunya adalah di Pantai Tablolong ini.
+
+            Boleh dibilang, pantai ini memang sedang naik daun. Padahal dulunya orang tak terlalu mengenal pantai yang letaknya lumayan
+            jauh dari Kota Kupang ini.',
+            'image' => 'Senja-di-Pantai-Tablolong.jpg'
+        ]);
+
+        Destination::create([
+            'review_id' => 5,
+            'todolist_id' => 5,
+            'title' => 'Pantai Meko Adonara, Pantai Pasir Timbul Nan Indah yang Diapit 3 Gunung Api',
+            // https://lostpacker.com/pantai-meko-adonara-pantai-pasir-timbul/
+            'desc' => 'Pantai Meko Adonara, adalah salah satu pantai pasir timbul di Nusa Tenggara Timur yang harus kamu kunjungi suatu saat.
+            Selain keindahan dengan air laut bening, seperti judulnya, pantai ini juga diapit oleh 3 gunung api, loh.
+
+            Mari ikut saya melihat keindahannya!',
+            'image' => 'Pulau-Mekko.jpg'
+        ]);
+
+        Destination::create([
+            'review_id' => 6,
+            'todolist_id' => 6,
+            'title' => 'Pantai Lemo-Lemo, Sisi Lain Keindahan Tanjung Bira',
+            // https://lostpacker.com/pantai-lemo-lemo/
+            'desc' => 'Tanjung bira tidak hanya terkenal dengan pantai pasir putih dan Pulau Liukang Loe. Berjarak beberapa kilometer dari
+            pantai ini kita akan menemukan sebuah keheningan yang dibalut dengan keindahan alam yang mempesona. Pantai lemo-lemo namanya.
+
+            Pantai ini belum banyak yang mengenal. Memang jika dibandingkan dengan saudara dekatnya yakni pantai Pasir putih, pantai ini belum
+            ada apa-apanya.',
+            'image' => 'pantai-lemo-lemo.jpg'
+        ]);
+
+        Destination::create([
+            'review_id' => 7,
+            'todolist_id' => 7,
+            'title' => 'Begini Pesona Pantai Papuma yang Tersohor itu',
+            // https://lostpacker.com/pantai-papuma-jember/
+            'desc' => 'Debur ombak dan heningnya suasana pagi kala itu di pantai Papuma, yang terletak di sebuah tanjung berjarak sekitar 37
+            kilometer dari Kabupaten Jember serasa mengobati penat di tubuh ini karena harus duduk di bis ekonomi dari Surabaya selama hampir 7 jam.
+
+            Tepat pukul 04.30 pagi saya tiba di sebuah penginapan kecil milik perhutani yang setelah saya telusuri ternyata penginapan
+            satu-satunya di kawasan ini yang dikelola Perhutani ini.',
+            'image' => 'pantai-papuma.jpg'
+        ]);
+
+        Destination::create([
+            'review_id' => 8,
+            'todolist_id' => 8,
+            'title' => 'Pulau Palambak, Surga Bagi Pemburu Pantai Sepi di Aceh Singkil',
+            // https://lostpacker.com/pulau-palambak-pantai-sepi-di-aceh-singkil/
+            'desc' => 'Pagi kembali hadir, dan matahari pagi sudah memecah keheningan pagi yang terjadi di sebuah pulau kecil di Aceh Singkil,
+            Pulau Palambak namanya.',
+            'image' => 'pulau-Palambak.jpg'
+        ]);
+
+        Destination::create([
+            'review_id' => 9,
+            'todolist_id' => 9,
+            'title' => 'Pantai Maluk, Eksotisme Sumbawa Yang Tidak Bisa Kamu Abaikan',
+            // https://lostpacker.com/eksotisme-pantai-maluk/
+            'desc' => 'Birunya langit dengan awan berarak dan birunya laut dengan pantai pasir putihnya yang indah seolah menyatu dalam
+            bentang cakrawala yang indah. Pemandangan itulah yang saya lihat ketika saya menginjakkan kaki pertama kali di pantai ini,
+            namanya Pantai Maluk.',
+            'image' => 'Pantai-Maluk.jpg'
+        ]);
+
+        Destination::create([
+            'review_id' => 10,
+            'todolist_id' => 10,
+            'title' => 'Pink Beach, Pantai Wajib Kunjung di Pulau Komodo',
+            // https://lostpacker.com/pink-beach-pulau-komodo/
+            'desc' => 'Sebagai negara kepulauan, Indonesia kaya sekali dengan objek wisata pantai. Dari Sabang di ujung barat hingga Merauke
+            di posisi ujung timur bentangan pantai nya tidak terukur. Pasir putih dan hitam menghiasi sepanjang pantai yang membentang luas.
+            Namun ada satu lagi yang menarik dari pantai-pantai di negeri ini, sebuah pantai dengan pasirnya yang berwarna pink (merah muda)
+            dengan pesona underwater yang memukau, inilah Pink Beach di Pulau Komodo.',
+            'image' => 'Pink-beach.jpg'
+        ]);
     }
 }
