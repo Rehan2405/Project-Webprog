@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/detail/{id}', [DetailController::class, 'Index'])->name('detail');
+Route::get('/SaveReview', [DetailController::class, 'Save']);
+Route::get('/DeleteReview', [DetailController::class, 'Delete']);
