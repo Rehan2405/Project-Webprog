@@ -26,6 +26,7 @@ class DestinationSeeder extends Seeder
             saya tertarik dengan pantai ini adalah MASIH SEPI. Hanya terlihat seorang wisatawan asing sedang asik membaca buku sambil tiduran
             tidak jauh dari tempat saya duduk.',
             'image' => 'Pantai-Mawun.jpg'
+            // 'video' => 'https://www.youtube.com/watch?v=BZF_UWlo6mA'
         ]);
 
         Destination::create([
@@ -37,6 +38,7 @@ class DestinationSeeder extends Seeder
             kepulauan Wakatobi. Satu dari tujuh mobil terios diberangkatkan dengan kapal phinisi, 22 jam perjalanan dari Kendari. Sedangkan
             kami, tentu saja naik pesawat yang hanya memakan waktu setengah jam, hehe.',
             'image' => 'wakatobi.jpg'
+            // 'video' => 'https://www.youtube.com/watch?v=PL5HxA01Fz4'
         ]);
 
         Destination::create([
@@ -51,6 +53,7 @@ class DestinationSeeder extends Seeder
 
             Namun, tak berapa lama lagi kami akan menghadapi sebuah perjalanan yang cukup panjang lagi menuju Karimun.',
             'image' => 'Sunset-di-Karimun-Jawa.jpg'
+            // 'video' => 'https://www.youtube.com/watch?v=HZVuxztLDwI'
         ]);
 
         Destination::create([
@@ -65,6 +68,7 @@ class DestinationSeeder extends Seeder
             Boleh dibilang, pantai ini memang sedang naik daun. Padahal dulunya orang tak terlalu mengenal pantai yang letaknya lumayan
             jauh dari Kota Kupang ini.',
             'image' => 'Senja-di-Pantai-Tablolong.jpg'
+            // 'video' => 'https://www.youtube.com/watch?v=lB_k7ProWhk'
         ]);
 
         Destination::create([
@@ -77,6 +81,7 @@ class DestinationSeeder extends Seeder
 
             Mari ikut saya melihat keindahannya!',
             'image' => 'Pulau-Mekko.jpg'
+            // 'video' => 'https://www.youtube.com/watch?v=05fEoXA130Q'
         ]);
 
         Destination::create([
@@ -90,6 +95,7 @@ class DestinationSeeder extends Seeder
             Pantai ini belum banyak yang mengenal. Memang jika dibandingkan dengan saudara dekatnya yakni pantai Pasir putih, pantai ini belum
             ada apa-apanya.',
             'image' => 'pantai-lemo-lemo.jpg'
+            // 'video' => 'https://www.youtube.com/watch?v=WrQN2a0rZJY'
         ]);
 
         Destination::create([
@@ -103,6 +109,7 @@ class DestinationSeeder extends Seeder
             Tepat pukul 04.30 pagi saya tiba di sebuah penginapan kecil milik perhutani yang setelah saya telusuri ternyata penginapan
             satu-satunya di kawasan ini yang dikelola Perhutani ini.',
             'image' => 'pantai-papuma.jpg'
+            // 'video' => 'https://www.youtube.com/watch?v=vhGzp2zN8Dc'
         ]);
 
         Destination::create([
@@ -113,6 +120,7 @@ class DestinationSeeder extends Seeder
             'desc' => 'Pagi kembali hadir, dan matahari pagi sudah memecah keheningan pagi yang terjadi di sebuah pulau kecil di Aceh Singkil,
             Pulau Palambak namanya.',
             'image' => 'pulau-Palambak.jpg'
+            // 'video' => 'https://www.youtube.com/watch?v=k9WX5Pp2OlY'
         ]);
 
         Destination::create([
@@ -124,6 +132,7 @@ class DestinationSeeder extends Seeder
             bentang cakrawala yang indah. Pemandangan itulah yang saya lihat ketika saya menginjakkan kaki pertama kali di pantai ini,
             namanya Pantai Maluk.',
             'image' => 'Pantai-Maluk.jpg'
+            // 'video' => 'https://www.youtube.com/watch?v=1m19JpS5fBQ'
         ]);
 
         Destination::create([
@@ -136,6 +145,74 @@ class DestinationSeeder extends Seeder
             Namun ada satu lagi yang menarik dari pantai-pantai di negeri ini, sebuah pantai dengan pasirnya yang berwarna pink (merah muda)
             dengan pesona underwater yang memukau, inilah Pink Beach di Pulau Komodo.',
             'image' => 'Pink-beach.jpg'
+            // 'video' => 'https://www.youtube.com/watch?v=HRmzcNRY2o4'
+        ]);
+
+        Destination::create([
+            'review_id' => 11,
+            'todolist_id' => 11,
+            'title' => 'Tana Toraja, Keagungan Budaya Yang Tetap Lestari',
+            // https://lostpacker.com/tana-toraja-keagungan-budaya-yang-tetap-lestari/
+            'desc' => 'Ujung-ujung atap tongkonan menyembul diantara kabut tebal pagi itu di Tana Toraja, seakan menyambut para
+            tamu yang mengunjunginya. Sungguh pemandangan luar biasa indah. Tepukan dari teman saya membuyarkan lamunan saya
+            tentang Toraja pagi itu.Setelah menyantap sarapan pagi di sebuah hotel termegah di Tana Toraja ini saya pun segera
+            bergegas menuju mobil yang akan membawa saya berkeliling Toraja ini. Pak Udin dan Pak Emir sudah menunggu di loby
+            hotel, mereka lah yang akan mengantarkan saya berkeliling Tana Toraja ini.',
+            'image' => 'tana-toraja.jpg'
+            // 'video' => ''
+        ]);
+
+        Destination::create([
+            'review_id' => 12,
+            'todolist_id' => 12,
+            'title' => 'Ternate, Kota yang sarat sejarah masa lalu',
+            // https://lostpacker.com/exploring-ternate/
+            'desc' => 'Jajaran gumpalan awan putih terlihat berarak dengan indahnya di atas puncak gunung Gamalama. Gunung yang menjadi
+            kebanggan masyarakat ternate ini seolah tidak henti-hentinya untuk memancarkan pesona keindahannya.
+
+            Setelah beranjrut-anjrutan di atas speed boat dari dermaga Jailolo selama hampir satu jam lamanya, tibalah saya di sebuah dermaga
+            Dhufa-Dhufa di kota Ternate. Cuaca siang itu terlihat menyengat sekali, matahari seolah dengan semangat sekali untuk membakar bumi
+            dengan sinarnya. Dermaganya sendiri terlihat sederhana, tidak ada kesan mewah ataupun modern sama sekali.',
+            'image' => 'ternate.jpg'
+            // 'video' => ''
+        ]);
+
+        Destination::create([
+            'review_id' => 13,
+            'todolist_id' => 13,
+            'title' => 'Wakatobi, Jangan hanya singgah di Wangi-Wangi',
+            // https://lostpacker.com/wakatobi-wangi-wangi/
+            'desc' => 'Petang itu terasa begitu sempurna. Beberapa anak kecil sedang asik bermain loncat-loncatan di ujung dermaga.
+            Beberapa kapal kayu diam tertambat dipinggir pantai.  Sementara itu semburat merah senja terpantul dengan begitu indah
+            di perairan pulau wangi-wangi. RUmah-rumah panggung juga seolah melengkapi keindahan lukisan alam yang terjadi petang
+            itu di Wakatobi.',
+            'image' => 'wangi-wangi.jpg'
+            // 'video' => ''
+        ]);
+
+        Destination::create([
+            'review_id' => 14,
+            'todolist_id' => 14,
+            'title' => 'Tanjung Bira, Keindahan di ujung Sulawesi',
+            // https://lostpacker.com/tanjung-bira-sulawesi/
+            'desc' => 'Pantai Tanjung Bira terletak di kecamatan Bira, kabupaten Bulukumba dan masih masuk dalah wilayah propinsi Sulawesi
+            Selatan. Pantai pasir putih dengan air lautnya yang jernih hingga kita bis amelihat ke dasar pasir pantai adalah menu andalan
+            yang wajib di datangi bagia siapa saja yang merindukan keindahan pantai.',
+            'image' => 'tanjung-bira.jpg'
+            // 'video' => ''
+        ]);
+
+        Destination::create([
+            'review_id' => 15,
+            'todolist_id' => 15,
+            'title' => 'Belajar Sejarah dari benteng Fort Rotterdam Makassar',
+            // https://lostpacker.com/fort-rotterdam/
+            'desc' => 'Banteng ini pernah hancur pada masa penjajahan Belanda. Kesultanan Gowa kala itu di pimpin oleh Sultan
+            Hasanuddin. Penyerangan kala itu Belanda mencoba merebut jalur perdagangan rempah-rempah dan memperluas sayap kekuasaan
+            mereka untuk mempermudah mereka membuka jalur ke Banda dan Maluku yang memang menjadi sentra Rempah. Penyerangan yang
+            berlangsung lama itu mengakibatkan sebagian Benteng hancur, dan akibat kekalahan itu juga Raja Gowa dipaksa menandatangani Perjanjian Bongaya pada tangga 18 November 1667.',
+            'image' => 'fort-rotterdam-makassar.jpg'
+            // 'video' => ''
         ]);
     }
 }
