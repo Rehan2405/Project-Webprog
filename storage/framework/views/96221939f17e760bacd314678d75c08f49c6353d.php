@@ -2,6 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <title><?php echo $__env->yieldContent('navbar'); ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -9,31 +10,39 @@
     <title>Bootstrap Example</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
+<style>
+  a.nav-link{
+    color: white;
+    margin: 1rem;
+  }
+</style>
   <body>
-      <nav class="navbar navbar-expand-lg bg-transparent fixed-top h5">
-      <div class="container-fluid">
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Favorite Destination</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Review</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <nav class="navbar">
+  <div class="container">
+    <!-- <a class="navbar-brand" href="#">
+      <img src="/public//img//logo.jpg" width="30" height="24">
+    </a> -->
+  </div>
+</nav>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav h5">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Destination</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Review</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</ul>
   </body>
 </html><?php /**PATH D:\Binus\Chapter 5\Webprog\project\resources\views/navbar.blade.php ENDPATH**/ ?>

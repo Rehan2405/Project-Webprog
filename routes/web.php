@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\DetailController;
+use App\Http\Controllers\destinationcontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,10 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
 
-Route::get('/detail/{id}', [DetailController::class, 'Index'])->name('detail');
-Route::get('/SaveReview', [DetailController::class, 'Save']);
-Route::get('/DeleteReview', [DetailController::class, 'Delete']);
+Route::get('/home', [destinationcontroller::class, 'dest'])->name('destinations');
