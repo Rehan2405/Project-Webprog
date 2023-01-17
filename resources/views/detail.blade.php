@@ -46,6 +46,30 @@
     }
 
 </style>
+<div class="container">
+    <div class="text-center">
+        <h1>{{$destination->title}}</h1>
+    </div>
+    <div class="d-flex justify-content-center mb-5">
+        <iframe width="800" height="400" src="https://youtu.be/3Kxf2dHlDpQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="d-flex justify-content-around mb-5">
+        <div>
+
+            <p>{{$destination->desc}}</p>
+        </div>
+        <img width="400" height="300"src="{{ asset('images/' . $destination->image) }}" class="" alt="...">
+    </div>
+
+    <div class="d-flex justify-content-around mb-5">
+        <img width="400" height="300"src="{{ asset('images/' . $destination->image) }}" class="" alt="...">
+        <div>
+            <h1>Things you have to do here!</h1>
+            <p>{{$todolist->list}}</p>
+        </div>
+    </div>
+</div>
 <div class="container justify-content-center d-flex flex-column" style="margin-bottom:200px;">    
     <div id="review">
 
