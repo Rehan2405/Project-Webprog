@@ -1,5 +1,5 @@
-@extends('template')
-@section('body')
+
+<?php $__env->startSection('body'); ?>
 <span class="mt-5"></span>
 <style>
     .add-btn{
@@ -48,7 +48,7 @@
 </style>
 <div class="container">
     <div class="text-center">
-        <h1>{{$destination->title}}</h1>
+        <h1><?php echo e($destination->title); ?></h1>
     </div>
     <div class="d-flex justify-content-center mb-5">
         <iframe width="800" height="400" src="https://youtu.be/3Kxf2dHlDpQ" frameborder="0" allowfullscreen></iframe>
@@ -57,16 +57,16 @@
     <div class="d-flex justify-content-around mb-5">
         <div>
 
-            <p>{{$destination->desc}}</p>
+            <p><?php echo e($destination->desc); ?></p>
         </div>
-        <img width="400" height="300"src="{{ asset('images/' . $destination->image) }}" class="" alt="...">
+        <img width="400" height="300"src="<?php echo e(asset('images/' . $destination->image)); ?>" class="" alt="...">
     </div>
 
     <div class="d-flex justify-content-around mb-5">
-        <img width="400" height="300"src="{{ asset('images/' . $destination->image) }}" class="" alt="...">
+        <img width="400" height="300"src="<?php echo e(asset('images/' . $destination->image)); ?>" class="" alt="...">
         <div>
             <h1>Things you have to do here!</h1>
-            <p>{{$todolist->list}}</p>
+            <p><?php echo e($todolist->list); ?></p>
         </div>
     </div>
 </div>
@@ -79,40 +79,40 @@
 
     <div id="review" class="w-75">
 
-        @if($reviews_count == 0)
+        <?php if($reviews_count == 0): ?>
             <div class="d-flex reviews m-1">
                 <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
                 <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
                 <input style="width:100%" type="text" onkeydown="Transform(this)" class="form-control border-0 dynamic-review">
             </div>
             
-        @else
-            @foreach ($reviews as $item)
+        <?php else: ?>
+            <?php $__currentLoopData = $reviews; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="d-flex reviews m-1">
                     <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
                     <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
 
-                        {{-- For Input Type --}}
-                        @if($item->inputType == "INPUT")
-                            <input style="width:100%; border:none" type="text" onkeydown="Transform(this)" class="{{$item->class}}" value="{{$item->value}}">
                         
-                        {{-- For Image Type --}}
-                        @elseif($item->inputType == "IMG")
+                        <?php if($item->inputType == "INPUT"): ?>
+                            <input style="width:100%; border:none" type="text" onkeydown="Transform(this)" class="<?php echo e($item->class); ?>" value="<?php echo e($item->value); ?>">
+                        
+                        
+                        <?php elseif($item->inputType == "IMG"): ?>
 
-                            @if($item->class == "big")
-                                <img style="height:400px;width:1000px" src={{$item->value}} class="{{$item->class}}">
+                            <?php if($item->class == "big"): ?>
+                                <img style="height:400px;width:1000px" src=<?php echo e($item->value); ?> class="<?php echo e($item->class); ?>">
                             
-                            @else
-                                <img style="height:200px" src={{$item->value}} class="{{$item->class}}">
+                            <?php else: ?>
+                                <img style="height:200px" src=<?php echo e($item->value); ?> class="<?php echo e($item->class); ?>">
 
-                            @endif
+                            <?php endif; ?>
 
-                        @elseif($item->inputType == "TEXTAREA")
-                            <textarea onkeydown="Transform(this)" class="{{$item->class}}" cols="60" rows="2">{{$item->value}}</textarea>
-                        @endif
+                        <?php elseif($item->inputType == "TEXTAREA"): ?>
+                            <textarea onkeydown="Transform(this)" class="<?php echo e($item->class); ?>" cols="60" rows="2"><?php echo e($item->value); ?></textarea>
+                        <?php endif; ?>
                 </div>
-            @endforeach
-        @endif
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+        <?php endif; ?>
         
     </div>
     <div class="w-75 mt-2">
@@ -284,4 +284,6 @@
     }
 
 </script>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('template', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\edbert.hansel\Desktop\Project-Webprog\resources\views/detail.blade.php ENDPATH**/ ?>
