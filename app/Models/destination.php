@@ -5,13 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class destination extends Model
+class Destination extends Model
 {
     use HasFactory;
-    protected $table='destination';
-    protected $fillable = [
-        'image',
-        'name',
-        'desc',
-    ];
+
+    public function todolist(){
+        return $this -> hasMany(Todolist::class);
+    }
 }
