@@ -3,6 +3,7 @@
 use App\Http\Controllers\destinationcontroller;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\FavoriteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,6 @@ Route::get('/search', [SearchController::class, 'search'])->name('search');
 Route::get('/detail/{id}', [DetailController::class, 'index']);
 Route::get('/SaveReview', [DetailController::class, 'Save']);
 Route::get('/DeleteReview', [DetailController::class, 'Delete']);
+
+Route::get('/about', [FavoriteController::class, 'about'])->name('about');
+Route::get('/favourite', [FavoriteController::class, 'destination'])->name('favourite');
