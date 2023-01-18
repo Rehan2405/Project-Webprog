@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\destinationcontroller;
 use App\Http\Controllers\DetailController;
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [destinationcontroller::class, 'dest'])->name('destinations');
+
+Route::get('/search', [SearchController::class, 'search'])->name('search');
 
 // Detail Section
 Route::get('/detail/{id}', [DetailController::class, 'index']);
