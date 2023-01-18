@@ -3,7 +3,7 @@
 <span class="mt-5"></span>
 <style>
     .add-btn{
-        color:white;
+        color:aquamarine;
         align-self: center;
         cursor: pointer;
     }
@@ -19,16 +19,16 @@
     }
 
     .reviews > input{
-        background-color: white;
+        background-color: aquamarine;
         transition: 0.3s
     }
 
     .reviews:hover > input{
-        background-color: #d3eaf2;
+        background-color: white;
     }
 
     .reviews > span{
-        color: white;
+        color: aquamarine;
         transition: 0.3s
     }
 
@@ -46,31 +46,30 @@
     }
 
 </style>
+<div style="background-color: aquamarine">
 <div class="container">
     <div class="text-center">
         <h1><?php echo e($destination->title); ?></h1>
     </div>
+    <br>
     <div class="d-flex justify-content-center mb-5">
-        <iframe width="800" height="400" src="https://youtu.be/3Kxf2dHlDpQ" frameborder="0" allowfullscreen></iframe>
+        <a href="<?php echo e($destination->video); ?>" target="_blank" class="w-75 border">
+            <img class="w-100" src="<?php echo e("https://img.youtube.com/vi/" . $thumbnail . "/maxresdefault.jpg"); ?>" alt="">
+            <span class="font-italic">Watch our Journey</span>
+        </a>
     </div>
 
-    <div class="d-flex justify-content-around mb-5">
-        <div>
+    <div class="d-flex flex-column justify-content-center mb-5">
+        <p class="text-justify" style="font-size: 20px"><?php echo e($destination->desc); ?>
 
-            <p><?php echo e($destination->desc); ?></p>
-        </div>
-        <img width="400" height="300"src="<?php echo e(asset('images/' . $destination->image)); ?>" class="" alt="...">
-    </div>
+        <br><br>
+        <img src="<?php echo e(asset('images/' . $destination->image)); ?>" class="w-100" style="height: 400px" alt="...">
 
-    <div class="d-flex justify-content-around mb-5">
-        <img width="400" height="300"src="<?php echo e(asset('images/' . $destination->image)); ?>" class="" alt="...">
-        <div>
-            <h1>Things you have to do here!</h1>
-            <p><?php echo e($todolist->list); ?></p>
-        </div>
+        <span class="font-italic font-weight-bold">Things You Have To Do Here! : <?php echo e($todolist->list); ?></span>
+        </p>
     </div>
 </div>
-<div class="container justify-content-center d-flex flex-column" style="margin-bottom:200px;">    
+<div class="container justify-content-center d-flex flex-column" style="padding-bottom:100px;">    
     
     <span class="">
         <h3>Our Reviews!</h3>
@@ -118,6 +117,7 @@
     <div class="w-75 mt-2">
         <button onclick="Save()" type="button" class="btn btn-primary" style="width: 100%">Save</button>
     </div>
+</div>
 </div>
 <script>
     function ShowInstruction(){

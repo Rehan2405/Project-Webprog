@@ -34,8 +34,8 @@ class DestinationSeeder extends Seeder
             seharian. Sementara saya bisa mendapatkan motor sejenis di Bali dengan harga 30 ribu saja (waktu itu). Tapi dengan pemandangan yang
             indah, semuanya akan terbayar. Jadi kalau temen-teman jalan-jalan ke Lombok, jangan lewatkan mengunjungi pantai yang indah dan tenang
             ini ya. Jangan lupa juga mensyen saya di Instagram ya.',
-            'image' => 'Pantai-Mawun.jpg'
-            // 'video' => 'https://www.youtube.com/watch?v=BZF_UWlo6mA'
+            'image' => 'Pantai-Mawun.jpg',
+            'video' => 'https://www.youtube.com/watch?v=BZF_UWlo6mA'
         ]);
 
         Destination::create([
@@ -71,8 +71,8 @@ class DestinationSeeder extends Seeder
             bersama ibu-ibu yang sedang menanak nasi. Perjalanan terios kali ini memang jauh lebih sulit, menantang, dan penuh drama. Namun, segala
             kesulitan itu terbayar ketika kita melihat semuanya dari dekat keindahan Sulawesi beserta heritage yang ada disana. Sampai ketemu di
             perjalanan terios selanjutnya!',
-            'image' => 'wakatobi.jpg'
-            // 'video' => 'https://www.youtube.com/watch?v=PL5HxA01Fz4'
+            'image' => 'wakatobi.jpg',
+            'video' => 'https://www.youtube.com/watch?v=PL5HxA01Fz4'
         ]);
 
         Destination::create([
@@ -109,8 +109,8 @@ class DestinationSeeder extends Seeder
             dalam memberikan laporan salah ucap bahwa putra Kanjeng Sunan berada jauh di tengah laut menuju daratan atau gunung yang tampak
             kremun-kremun (samar-samar), dari situlah sang Sunan mendoakan putranya agar sampai “Karimun jawa” dengan selamat, dan beredarlah
             berita bahwa Amir khasan sedang berdakwah ke Karimun Jawa. Dan mulai saat itulah daratan itu dinamai Karimun Jawa.',
-            'image' => 'Sunset-di-Karimun-Jawa.jpg'
-            // 'video' => 'https://www.youtube.com/watch?v=HZVuxztLDwI'
+            'image' => 'Sunset-di-Karimun-Jawa.jpg',
+            'video' => 'https://www.youtube.com/watch?v=HZVuxztLDwI'
         ]);
 
         Destination::create([
@@ -138,8 +138,8 @@ class DestinationSeeder extends Seeder
             Saya merasakan suasana yang begitu damai sekali saat momen-momen seperti ini. Tak banyak pula ‘sampah visual’ yang menggangu saya di
             lokasi ini. Sehingga saya leluasa mengambil potret senja. Hanya ada beberapa warga lokal yang rumahnya tak jauh dari tempat saya
             berdiri, terlihat melintas di depan saya sambil melempar senyum.',
-            'image' => 'Senja-di-Pantai-Tablolong.jpg'
-            // 'video' => 'https://www.youtube.com/watch?v=lB_k7ProWhk'
+            'image' => 'Senja-di-Pantai-Tablolong.jpg',
+            'video' => 'https://www.youtube.com/watch?v=lB_k7ProWhk'
         ]);
 
         Destination::create([
@@ -174,8 +174,8 @@ class DestinationSeeder extends Seeder
             naik perahunya. Oh ya, harga sewa perahunya juga murah kok. Per orang di bandrol sekitar 15 – 20 ribu saja. Itu kalau jumlah kita
             datang banyak, ya. Waktu itu kami datang berempat, sewa kapalnya sekitar 100ribu saja. Sangat terjangkau dibanding dengan harga dari
             kampung Waiwuring saat kunjungan pertama saya.',
-            'image' => 'Pulau-Mekko.jpg'
-            // 'video' => 'https://www.youtube.com/watch?v=05fEoXA130Q'
+            'image' => 'Pulau-Mekko.jpg',
+            'video' => 'https://www.youtube.com/watch?v=05fEoXA130Q'
         ]);
 
         Destination::create([
@@ -200,8 +200,8 @@ class DestinationSeeder extends Seeder
             masyarakat setempat juga bisa menikmati keuntungan dari pariwisata. Cerita perjalanan mengunjungi Pantai Lemo lemo di Tanjung Bira,
             Sulawesi Selatan ini saya lakukan medio tahun 2013 yang lalu. Bila terdapat beberapa informasi terkait harga mungkin sudah tidak
             relevan lagi saat ini. Thanks',
-            'image' => 'pantai-lemo-lemo.jpg'
-            // 'video' => 'https://www.youtube.com/watch?v=WrQN2a0rZJY'
+            'image' => 'pantai-lemo-lemo.jpg',
+            'video' => 'https://www.youtube.com/watch?v=WrQN2a0rZJY'
         ]);
 
         Destination::create([
@@ -240,8 +240,8 @@ class DestinationSeeder extends Seeder
             di pinggir pantai pasir putih yang indah, setelah pemilik warung menghidangkan semua menu makan siang. Siang itu, kami agak sedikit
             kaget dibuat karena porsi ikannya gede dan banyak sekali rasanya tidak akan habis di perut kami bertiga. Tapi, ya akhirnya habis
             juga… “slow but sure” Begitulah semboyan kami saat itu.',
-            'image' => 'pantai-papuma.jpg'
-            // 'video' => 'https://www.youtube.com/watch?v=vhGzp2zN8Dc'
+            'image' => 'pantai-papuma.jpg',
+            'video' => 'https://www.youtube.com/watch?v=vhGzp2zN8Dc'
         ]);
 
         Destination::create([
@@ -276,8 +276,8 @@ class DestinationSeeder extends Seeder
             sarapan di pagi yang indah itu. Setelah sarapan saya kembali mengitari pulau. Awan-awan putih terlihat berarak. Laut terlihat begitu
             berkilau memantulkan cahaya matahari. Ombak-ombak kecil seolah berlari menuju bibir pantai melewati pantai dangkal yang berair jernih.
             Pohon-pohon kelapa juga menjulang tinggi diangkasa seolah sedang menikmati hangatnya matahari pagi.',
-            'image' => 'pulau-Palambak.jpg'
-            // 'video' => 'https://www.youtube.com/watch?v=k9WX5Pp2OlY'
+            'image' => 'pulau-Palambak.jpg',
+            'video' => 'https://www.youtube.com/watch?v=k9WX5Pp2OlY'
         ]);
 
         Destination::create([
@@ -310,8 +310,8 @@ class DestinationSeeder extends Seeder
             Perusahaan inilah yang mulai memberdayakan masyarakat sekitar pantai untuk lebih peduli lagi terhadap pantai Maluk ini yang apabila
             di kelola dan dijaga dengan baik, bukan tidak mungkin akan mengalahkan ketenaran pantai Kuta maupun pantai Sanur di Bali, suatu saat
             nanti.',
-            'image' => 'Pantai-Maluk.jpg'
-            // 'video' => 'https://www.youtube.com/watch?v=1m19JpS5fBQ'
+            'image' => 'Pantai-Maluk.jpg',
+            'video' => 'https://www.youtube.com/watch?v=1m19JpS5fBQ'
         ]);
 
         Destination::create([
@@ -338,8 +338,8 @@ class DestinationSeeder extends Seeder
             memandangi indahnya pantai dari salah satu ujung bukitnya, berenang dan snorkeling maupun diving. terumbu karang beraneka ragam jenis
             dan warna menghiasi perairan pantai. Semua terjaga kelestariannya. Memang pantai ini masih sepi dari pengunjung sehingga kelestarian
             koral dan habitat lautnya masih terjaga.',
-            'image' => 'Pink-beach.jpg'
-            // 'video' => 'https://www.youtube.com/watch?v=HRmzcNRY2o4'
+            'image' => 'Pink-beach.jpg',
+            'video' => 'https://www.youtube.com/watch?v=HRmzcNRY2o4'
         ]);
 
         Destination::create([
@@ -352,8 +352,8 @@ class DestinationSeeder extends Seeder
             tentang Toraja pagi itu.Setelah menyantap sarapan pagi di sebuah hotel termegah di Tana Toraja ini saya pun segera
             bergegas menuju mobil yang akan membawa saya berkeliling Toraja ini. Pak Udin dan Pak Emir sudah menunggu di loby
             hotel, mereka lah yang akan mengantarkan saya berkeliling Tana Toraja ini.',
-            'image' => 'tana-toraja.jpg'
-            // 'video' => ''
+            'image' => 'tana-toraja.jpg',
+            'video' => ''
         ]);
 
         Destination::create([
@@ -367,8 +367,8 @@ class DestinationSeeder extends Seeder
             Setelah beranjrut-anjrutan di atas speed boat dari dermaga Jailolo selama hampir satu jam lamanya, tibalah saya di sebuah dermaga
             Dhufa-Dhufa di kota Ternate. Cuaca siang itu terlihat menyengat sekali, matahari seolah dengan semangat sekali untuk membakar bumi
             dengan sinarnya. Dermaganya sendiri terlihat sederhana, tidak ada kesan mewah ataupun modern sama sekali.',
-            'image' => 'ternate.jpg'
-            // 'video' => ''
+            'image' => 'ternate.jpg',
+            'video' => ''
         ]);
 
         Destination::create([
@@ -380,8 +380,8 @@ class DestinationSeeder extends Seeder
             Beberapa kapal kayu diam tertambat dipinggir pantai.  Sementara itu semburat merah senja terpantul dengan begitu indah
             di perairan pulau wangi-wangi. RUmah-rumah panggung juga seolah melengkapi keindahan lukisan alam yang terjadi petang
             itu di Wakatobi.',
-            'image' => 'wangi-wangi.jpg'
-            // 'video' => ''
+            'image' => 'wangi-wangi.jpg',
+            'video' => ''
         ]);
 
         Destination::create([
@@ -392,8 +392,8 @@ class DestinationSeeder extends Seeder
             'desc' => 'Pantai Tanjung Bira terletak di kecamatan Bira, kabupaten Bulukumba dan masih masuk dalah wilayah propinsi Sulawesi
             Selatan. Pantai pasir putih dengan air lautnya yang jernih hingga kita bis amelihat ke dasar pasir pantai adalah menu andalan
             yang wajib di datangi bagia siapa saja yang merindukan keindahan pantai.',
-            'image' => 'tanjung-bira.jpg'
-            // 'video' => ''
+            'image' => 'tanjung-bira.jpg',
+            'video' => ''
         ]);
 
         Destination::create([
@@ -405,8 +405,8 @@ class DestinationSeeder extends Seeder
             Hasanuddin. Penyerangan kala itu Belanda mencoba merebut jalur perdagangan rempah-rempah dan memperluas sayap kekuasaan
             mereka untuk mempermudah mereka membuka jalur ke Banda dan Maluku yang memang menjadi sentra Rempah. Penyerangan yang
             berlangsung lama itu mengakibatkan sebagian Benteng hancur, dan akibat kekalahan itu juga Raja Gowa dipaksa menandatangani Perjanjian Bongaya pada tangga 18 November 1667.',
-            'image' => 'fort-rotterdam-makassar.jpg'
-            // 'video' => ''
+            'image' => 'fort-rotterdam-makassar.jpg',
+            'video' => ''
         ]);
     }
 }
