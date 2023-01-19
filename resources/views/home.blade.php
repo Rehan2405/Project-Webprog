@@ -24,8 +24,6 @@
             <div class="d-flex text justify-content-center">
                 <div class="text-white" style="margin-top: 10%">
                     <p style="font-size: 70px; font-weight:bold ">Hello Welcome To Our Journey!</p>
-                    {{-- <h1>Hello Welcome To Our Journey!</h1> --}}
-                    {{-- <p style="font-size: 45px; font-weight:bold ">Hello Welcome To Our Journey!</p> --}}
                     <h4>Here you can see our journey and use it as your references to start traveling the world.</h4>
                     <form action="{{ route('search_dest') }}" method="GET">
                         @csrf

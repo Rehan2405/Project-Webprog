@@ -6414,3 +6414,19 @@ Did you mean one of these?
 [stacktrace]
 #0 {main}
 "} 
+[2023-01-19 14:41:40] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-19 14:42:40] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-19 14:43:40] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-19 14:44:40] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 

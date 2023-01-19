@@ -5,7 +5,8 @@
 
     <div class="container">
         <div class="text-black">
-            <h1>Search Post</h1>
+            
+            <p style="font-size: 40px; font-weight:bold" >Search Destination</p>
             <form action="<?php echo e(route('search_dest')); ?>" method="GET">
                 <?php echo csrf_field(); ?>
                 <div class="input-group mt-4 mb-4">

@@ -14,7 +14,8 @@
 
     <div class="container">
         <div class="text-black">
-            <h1>Search Post</h1>
+            {{-- <h1>Search Destination</h1> --}}
+            <p style="font-size: 40px; font-weight:bold" >Search Destination</p>
             <form action="{{ route('search_dest') }}" method="GET">
                 @csrf
                 <div class="input-group mt-4 mb-4">
