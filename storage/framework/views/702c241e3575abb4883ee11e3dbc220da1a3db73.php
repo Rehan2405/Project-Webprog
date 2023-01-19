@@ -10,11 +10,11 @@
 
         }
 
-        .text{
-      /* margin-left: 7em; */
-      /* margin-top: 7em; */
-      /* margin-right: 60em; */
-    }
+        .text {
+            /* margin-left: 7em; */
+            /* margin-top: 7em; */
+            /* margin-right: 60em; */
+        }
     </style>
 
     <body>
@@ -22,8 +22,10 @@
         <div class="container hero-area">
             <div class="d-flex text justify-content-center">
                 <div class="text-white" style="margin-top: 10%">
-                    <h1>Hello Welcome To Our Journey!</h1>
-                    <h5>Here you can see our journey and use it as your references to start traveling the world.</h5>
+                    <p style="font-size: 70px; font-weight:bold ">Hello Welcome To Our Journey!</p>
+                    
+                    
+                    <h4>Here you can see our journey and use it as your references to start traveling the world.</h4>
                     <form action="<?php echo e(route('search_dest')); ?>" method="GET">
                         <?php echo csrf_field(); ?>
                         <div class="input-group rounded mt-4 w-50">
@@ -31,7 +33,6 @@
                                 aria-describedby="search-addon" name="search" />
                         </div>
                     </form>
-                    
                 </div>
                 <img src="<?php echo e(asset('images/HomePic2.png')); ?>" alt="" style="height:600px; width:600px">
             </div>
@@ -51,7 +52,8 @@
                             <div class="card-body">
                                 <h5 class="card-title"><strong><?php echo e(Str::limit($dest->title, 30)); ?></strong></h5>
                                 <i class="card-text w-full bi bi-geo-alt"><?php echo e(Str::limit($dest->desc, 120)); ?></i><br>
-                                <a href="<?php echo e(url('detail/' . $dest->id)); ?>" class="btn btn-outline-info mt-3"> More Detail</a>
+                                <a href="<?php echo e(url('detail/' . $dest->id)); ?>" class="btn btn-outline-info mt-3"> More
+                                    Detail</a>
                             </div>
 
                         </div>

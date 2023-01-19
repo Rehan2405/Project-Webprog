@@ -76,47 +76,58 @@
         <a class="text-blue" style="cursor: pointer" onclick="ShowInstruction()">How to use this?</a>
     </span>
 
-    <div id="review" class="w-75">
+    <div class="d-flex">
+        <div class="w-100">
+            <div id="review" class="w-100">
 
-        <?php if($reviews_count == 0): ?>
-            <div class="d-flex reviews m-1">
-                <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
-                <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
-                <input style="width:100%" type="text" onkeydown="Transform(this)" class="form-control border-0 dynamic-review">
-            </div>
-            
-        <?php else: ?>
-            <?php $__currentLoopData = $reviews; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                <div class="d-flex reviews m-1">
-                    <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
-                    <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
-
-                        
-                        <?php if($item->inputType == "INPUT"): ?>
-                            <input style="width:100%; border:none" type="text" onkeydown="Transform(this)" class="<?php echo e($item->class); ?>" value="<?php echo e($item->value); ?>">
-                        
-                        
-                        <?php elseif($item->inputType == "IMG"): ?>
-
-                            <?php if($item->class == "big"): ?>
-                                <img style="height:400px;width:1000px" src=<?php echo e($item->value); ?> class="<?php echo e($item->class); ?>">
-                            
-                            <?php else: ?>
-                                <img style="height:200px" src=<?php echo e($item->value); ?> class="<?php echo e($item->class); ?>">
-
-                            <?php endif; ?>
-
-                        <?php elseif($item->inputType == "TEXTAREA"): ?>
-                            <textarea onkeydown="Transform(this)" class="<?php echo e($item->class); ?>" cols="60" rows="2"><?php echo e($item->value); ?></textarea>
-                        <?php endif; ?>
-                </div>
-            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-        <?php endif; ?>
+                <?php if($reviews_count == 0): ?>
+                    <div class="d-flex reviews m-1">
+                        <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
+                        <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
+                        <input style="width:100%" type="text" onkeydown="Transform(this)" class="form-control border-0 dynamic-review">
+                    </div>
+                    
+                <?php else: ?>
+                    <?php $__currentLoopData = $reviews; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <div class="d-flex reviews m-1">
+                            <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
+                            <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
         
+                                
+                                <?php if($item->inputType == "INPUT"): ?>
+                                    <input style="width:100%; border:none" type="text" onkeydown="Transform(this)" class="<?php echo e($item->class); ?>" value="<?php echo e($item->value); ?>">
+                                
+                                
+                                <?php elseif($item->inputType == "IMG"): ?>
+        
+                                    <?php if($item->class == "big"): ?>
+                                        <img style="height:400px;width:1000px" src=<?php echo e($item->value); ?> class="<?php echo e($item->class); ?>">
+                                    
+                                    <?php else: ?>
+                                        <img style="height:200px" src=<?php echo e($item->value); ?> class="<?php echo e($item->class); ?>">
+        
+                                    <?php endif; ?>
+        
+                                <?php elseif($item->inputType == "TEXTAREA"): ?>
+                                    <textarea onkeydown="Transform(this)" class="<?php echo e($item->class); ?>" cols="60" rows="2"><?php echo e($item->value); ?></textarea>
+                                <?php endif; ?>
+                        </div>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                <?php endif; ?>
+                
+            </div>
+            <div class="w-100 mt-2">
+                <button onclick="Save()" type="button" class="btn btn-primary" style="width: 100%">Save</button>
+            </div>
+        </div>
+        <span class="m-5"></span>
+        <div class="mapouter w-100">
+            <div class="gmap_canvas">
+            <iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
     </div>
-    <div class="w-75 mt-2">
-        <button onclick="Save()" type="button" class="btn btn-primary" style="width: 100%">Save</button>
-    </div>
+
 </div>
 </div>
 <script>
