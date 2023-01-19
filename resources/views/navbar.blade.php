@@ -21,21 +21,21 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <nav class="navbar" >
+            <nav class="navbar">
                 <div class="container w-50 ml-5">
                     <img src="{{ asset('images/Logo.png') }}" alt="" style="height:45px; width:70px">
                 </div>
             </nav>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav h5">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Destination</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Search</a>
+                        <a class="nav-link" href="/search">Search</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About Us</a>

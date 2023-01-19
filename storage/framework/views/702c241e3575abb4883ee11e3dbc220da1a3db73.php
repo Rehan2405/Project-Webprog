@@ -24,11 +24,14 @@
                 <div class="text-white" style="margin-top: 10%">
                     <h1>Hello Welcome To Our Journey!</h1>
                     <h5>Here you can see our journey and use it as your references to start traveling the world.</h5>
-                    <div class="input-group rounded mt-4 w-50">
-                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                            aria-describedby="search-addon" />
-                        </span>
-                    </div>
+                    <form action="<?php echo e(route('search_dest')); ?>" method="GET">
+                        <?php echo csrf_field(); ?>
+                        <div class="input-group rounded mt-4 w-50">
+                            <input type="text" class="form-control rounded" placeholder="Search" aria-label="Search"
+                                aria-describedby="search-addon" name="search" />
+                        </div>
+                    </form>
+                    
                 </div>
                 <img src="<?php echo e(asset('images/HomePic2.png')); ?>" alt="" style="height:600px; width:600px">
             </div>

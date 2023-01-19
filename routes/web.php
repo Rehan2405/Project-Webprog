@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [destinationcontroller::class, 'dest'])->name('destinations');
 
 Route::get('/search', [SearchController::class, 'search'])->name('search');
+Route::get('/search-destination', [SearchController::class, 'search_dest'])->name('search_dest');
 
 // Detail Section
 Route::get('/detail/{id}', [DetailController::class, 'index']);

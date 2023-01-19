@@ -11,11 +11,11 @@
 
         }
 
-        .text{
-      /* margin-left: 7em; */
-      /* margin-top: 7em; */
-      /* margin-right: 60em; */
-    }
+        .text {
+            /* margin-left: 7em; */
+            /* margin-top: 7em; */
+            /* margin-right: 60em; */
+        }
     </style>
 
     <body>
@@ -25,11 +25,13 @@
                 <div class="text-white" style="margin-top: 10%">
                     <h1>Hello Welcome To Our Journey!</h1>
                     <h5>Here you can see our journey and use it as your references to start traveling the world.</h5>
-                    <div class="input-group rounded mt-4 w-50">
-                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                            aria-describedby="search-addon" />
-                        </span>
-                    </div>
+                    <form action="{{ route('search_dest') }}" method="GET">
+                        @csrf
+                        <div class="input-group rounded mt-4 w-50">
+                            <input type="text" class="form-control rounded" placeholder="Search" aria-label="Search"
+                                aria-describedby="search-addon" name="search" />
+                        </div>
+                    </form>
                 </div>
                 <img src="{{ asset('images/HomePic2.png') }}" alt="" style="height:600px; width:600px">
             </div>
@@ -49,7 +51,8 @@
                             <div class="card-body">
                                 <h5 class="card-title"><strong>{{ Str::limit($dest->title, 30) }}</strong></h5>
                                 <i class="card-text w-full bi bi-geo-alt">{{ Str::limit($dest->desc, 120) }}</i><br>
-                                <a href="{{ url('detail/' . $dest->id) }}" class="btn btn-outline-info mt-3"> More Detail</a>
+                                <a href="{{ url('detail/' . $dest->id) }}" class="btn btn-outline-info mt-3"> More
+                                    Detail</a>
                             </div>
 
                         </div>

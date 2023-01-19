@@ -2,7 +2,7 @@
 @section('content', 'search')
 
 @section('body')
-    <style>
+    {{-- <style>
         body {
             /* background-image: url('https://wallpaperaccess.com/full/1124103.jpg'); */
             background-repeat: no-repeat;
@@ -10,23 +10,24 @@
             background-blend-mode: darken;
 
         }
-    </style>
+    </style> --}}
 
-    <body>
-        <div class="container">
-            <div class="text-black">
-                <h1>Search Post</h1>
-                <div class="input-group rounded mt-4">
-                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                        aria-describedby="search-addon" />
-                    </span>
+    <div class="container">
+        <div class="text-black">
+            <h1>Search Post</h1>
+            <form action="{{ route('search_dest') }}" method="GET">
+                @csrf
+                <div class="input-group mt-4 mb-4">
+                    <input type="text" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" name="search" />
                 </div>
-            </div>
+            </form>
+
             <div class="row mt-3">
-                @foreach ($destinations as $dest)
+                @forelse ($destinations as $dest)
                     <div class="col-4 mb-4 order-1 mt-3">
                         <div class="card">
-                            <img src="{{ url('/Images/' . $dest->image) }}"
+                            <img src="{{ asset('Images/' . $dest->image) }}"
                                 style="object-fit: :cover; width:100%; height:180px" class="card-img-top" alt="image">
                             <div class="card-body">
                                 <h5 class="card-title"><strong>{{ Str::limit($dest->title, 30) }}</strong></h5>
@@ -34,13 +35,13 @@
                                 <a href="{{ url('detail/' . $dest->id) }}" class="btn btn-outline-info mt-3"> More
                                     Detail</a>
                             </div>
-
                         </div>
                     </div>
-                @endforeach
+                @empty
+                    <div class="alert alert-danger">The Destination You Are Looking For Doesn't Exist!</div>
+                @endforelse
+            </div>
         </div>
-
-
-    </body>
+    </div>
 
 @endsection

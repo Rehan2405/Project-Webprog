@@ -1,31 +1,24 @@
 <?php $__env->startSection('content', 'search'); ?>
 
 <?php $__env->startSection('body'); ?>
-    <style>
-        body {
-            /* background-image: url('https://wallpaperaccess.com/full/1124103.jpg'); */
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-blend-mode: darken;
+    
 
-        }
-    </style>
-
-    <body>
-        <div class="container">
-            <div class="text-black">
-                <h1>Search Post</h1>
-                <div class="input-group rounded mt-4">
-                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                        aria-describedby="search-addon" />
-                    </span>
+    <div class="container">
+        <div class="text-black">
+            <h1>Search Post</h1>
+            <form action="<?php echo e(route('search_dest')); ?>" method="GET">
+                <?php echo csrf_field(); ?>
+                <div class="input-group mt-4 mb-4">
+                    <input type="text" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" name="search" />
                 </div>
-            </div>
+            </form>
+
             <div class="row mt-3">
-                <?php $__currentLoopData = $destinations; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $dest): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <?php $__empty_1 = true; $__currentLoopData = $destinations; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $dest): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                     <div class="col-4 mb-4 order-1 mt-3">
                         <div class="card">
-                            <img src="<?php echo e(url('/Images/' . $dest->image)); ?>"
+                            <img src="<?php echo e(asset('Images/' . $dest->image)); ?>"
                                 style="object-fit: :cover; width:100%; height:180px" class="card-img-top" alt="image">
                             <div class="card-body">
                                 <h5 class="card-title"><strong><?php echo e(Str::limit($dest->title, 30)); ?></strong></h5>
@@ -33,14 +26,14 @@
                                 <a href="<?php echo e(url('detail/' . $dest->id)); ?>" class="btn btn-outline-info mt-3"> More
                                     Detail</a>
                             </div>
-
                         </div>
                     </div>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
+                    <div class="alert alert-danger">The Destination You Are Looking For Doesn't Exist!</div>
+                <?php endif; ?>
+            </div>
         </div>
-
-
-    </body>
+    </div>
 
 <?php $__env->stopSection(); ?>
 
