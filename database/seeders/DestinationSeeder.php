@@ -35,7 +35,8 @@ class DestinationSeeder extends Seeder
             indah, semuanya akan terbayar. Jadi kalau temen-teman jalan-jalan ke Lombok, jangan lewatkan mengunjungi pantai yang indah dan tenang
             ini ya. Jangan lupa juga mensyen saya di Instagram ya.',
             'image' => 'Pantai-Mawun.jpg',
-            'video' => 'https://www.youtube.com/watch?v=BZF_UWlo6mA'
+            'video' => 'https://www.youtube.com/watch?v=BZF_UWlo6mA',
+            'location' => 'https://maps.google.com/maps?q=pantai%20mawun&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -72,7 +73,8 @@ class DestinationSeeder extends Seeder
             kesulitan itu terbayar ketika kita melihat semuanya dari dekat keindahan Sulawesi beserta heritage yang ada disana. Sampai ketemu di
             perjalanan terios selanjutnya!',
             'image' => 'wakatobi.jpg',
-            'video' => 'https://www.youtube.com/watch?v=PL5HxA01Fz4'
+            'video' => 'https://www.youtube.com/watch?v=PL5HxA01Fz4',
+            'location' => 'https://maps.google.com/maps?q=tomia&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -110,7 +112,8 @@ class DestinationSeeder extends Seeder
             kremun-kremun (samar-samar), dari situlah sang Sunan mendoakan putranya agar sampai “Karimun jawa” dengan selamat, dan beredarlah
             berita bahwa Amir khasan sedang berdakwah ke Karimun Jawa. Dan mulai saat itulah daratan itu dinamai Karimun Jawa.',
             'image' => 'Sunset-di-Karimun-Jawa.jpg',
-            'video' => 'https://www.youtube.com/watch?v=HZVuxztLDwI'
+            'video' => 'https://www.youtube.com/watch?v=HZVuxztLDwI',
+            'location' => 'https://maps.google.com/maps?q=Karimunjawa&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -139,7 +142,8 @@ class DestinationSeeder extends Seeder
             lokasi ini. Sehingga saya leluasa mengambil potret senja. Hanya ada beberapa warga lokal yang rumahnya tak jauh dari tempat saya
             berdiri, terlihat melintas di depan saya sambil melempar senyum.',
             'image' => 'Senja-di-Pantai-Tablolong.jpg',
-            'video' => 'https://www.youtube.com/watch?v=lB_k7ProWhk'
+            'video' => 'https://www.youtube.com/watch?v=lB_k7ProWhk',
+            'location' => 'https://maps.google.com/maps?q=Pantai%20Tablolong%20Kupang&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -175,7 +179,8 @@ class DestinationSeeder extends Seeder
             datang banyak, ya. Waktu itu kami datang berempat, sewa kapalnya sekitar 100ribu saja. Sangat terjangkau dibanding dengan harga dari
             kampung Waiwuring saat kunjungan pertama saya.',
             'image' => 'Pulau-Mekko.jpg',
-            'video' => 'https://www.youtube.com/watch?v=05fEoXA130Q'
+            'video' => 'https://www.youtube.com/watch?v=05fEoXA130Q',
+            'location' => 'https://maps.google.com/maps?q=pantai%20meko&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -201,7 +206,8 @@ class DestinationSeeder extends Seeder
             Sulawesi Selatan ini saya lakukan medio tahun 2013 yang lalu. Bila terdapat beberapa informasi terkait harga mungkin sudah tidak
             relevan lagi saat ini. Thanks',
             'image' => 'pantai-lemo-lemo.jpg',
-            'video' => 'https://www.youtube.com/watch?v=WrQN2a0rZJY'
+            'video' => 'https://www.youtube.com/watch?v=WrQN2a0rZJY',
+            'location' => 'https://maps.google.com/maps?q=pantai%20lemo%20lemo&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -241,7 +247,8 @@ class DestinationSeeder extends Seeder
             kaget dibuat karena porsi ikannya gede dan banyak sekali rasanya tidak akan habis di perut kami bertiga. Tapi, ya akhirnya habis
             juga… “slow but sure” Begitulah semboyan kami saat itu.',
             'image' => 'pantai-papuma.jpg',
-            'video' => 'https://www.youtube.com/watch?v=vhGzp2zN8Dc'
+            'video' => 'https://www.youtube.com/watch?v=vhGzp2zN8Dc',
+            'location' => 'https://maps.google.com/maps?q=pantai%20papuma&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -277,7 +284,8 @@ class DestinationSeeder extends Seeder
             berkilau memantulkan cahaya matahari. Ombak-ombak kecil seolah berlari menuju bibir pantai melewati pantai dangkal yang berair jernih.
             Pohon-pohon kelapa juga menjulang tinggi diangkasa seolah sedang menikmati hangatnya matahari pagi.',
             'image' => 'pulau-Palambak.jpg',
-            'video' => 'https://www.youtube.com/watch?v=k9WX5Pp2OlY'
+            'video' => 'https://www.youtube.com/watch?v=k9WX5Pp2OlY',
+            'location' => 'https://maps.google.com/maps?q=pulau%20palambak&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -311,7 +319,8 @@ class DestinationSeeder extends Seeder
             di kelola dan dijaga dengan baik, bukan tidak mungkin akan mengalahkan ketenaran pantai Kuta maupun pantai Sanur di Bali, suatu saat
             nanti.',
             'image' => 'Pantai-Maluk.jpg',
-            'video' => 'https://www.youtube.com/watch?v=1m19JpS5fBQ'
+            'video' => 'https://www.youtube.com/watch?v=1m19JpS5fBQ',
+            'location' => 'https://maps.google.com/maps?q=pantai%20maluk&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -339,7 +348,8 @@ class DestinationSeeder extends Seeder
             dan warna menghiasi perairan pantai. Semua terjaga kelestariannya. Memang pantai ini masih sepi dari pengunjung sehingga kelestarian
             koral dan habitat lautnya masih terjaga.',
             'image' => 'Pink-beach.jpg',
-            'video' => 'https://www.youtube.com/watch?v=HRmzcNRY2o4'
+            'video' => 'https://www.youtube.com/watch?v=HRmzcNRY2o4',
+            'location' => 'https://maps.google.com/maps?q=pink%20beach%20pulau%20komodo&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -353,7 +363,8 @@ class DestinationSeeder extends Seeder
             bergegas menuju mobil yang akan membawa saya berkeliling Toraja ini. Pak Udin dan Pak Emir sudah menunggu di loby
             hotel, mereka lah yang akan mengantarkan saya berkeliling Tana Toraja ini.',
             'image' => 'tana-toraja.jpg',
-            'video' => ''
+            'video' => 'https://www.youtube.com/watch?v=6x46n9viTts',
+            'location' => 'https://maps.google.com/maps?q=tana%20toraja&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -368,7 +379,8 @@ class DestinationSeeder extends Seeder
             Dhufa-Dhufa di kota Ternate. Cuaca siang itu terlihat menyengat sekali, matahari seolah dengan semangat sekali untuk membakar bumi
             dengan sinarnya. Dermaganya sendiri terlihat sederhana, tidak ada kesan mewah ataupun modern sama sekali.',
             'image' => 'ternate.jpg',
-            'video' => ''
+            'video' => 'https://www.youtube.com/watch?v=hgbXUwHNsFc',
+            'location' => 'https://maps.google.com/maps?q=Ternate&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -378,10 +390,11 @@ class DestinationSeeder extends Seeder
             // https://lostpacker.com/wakatobi-wangi-wangi/
             'desc' => 'Petang itu terasa begitu sempurna. Beberapa anak kecil sedang asik bermain loncat-loncatan di ujung dermaga.
             Beberapa kapal kayu diam tertambat dipinggir pantai.  Sementara itu semburat merah senja terpantul dengan begitu indah
-            di perairan pulau wangi-wangi. RUmah-rumah panggung juga seolah melengkapi keindahan lukisan alam yang terjadi petang
+            di perairan pulau wangi-wangi. Rumah-rumah panggung juga seolah melengkapi keindahan lukisan alam yang terjadi petang
             itu di Wakatobi.',
             'image' => 'wangi-wangi.jpg',
-            'video' => ''
+            'video' => 'https://www.youtube.com/watch?v=KHQxCM868VA',
+            'location' => 'https://maps.google.com/maps?q=wangi%20wangi%20wakatobi&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -393,7 +406,8 @@ class DestinationSeeder extends Seeder
             Selatan. Pantai pasir putih dengan air lautnya yang jernih hingga kita bis amelihat ke dasar pasir pantai adalah menu andalan
             yang wajib di datangi bagia siapa saja yang merindukan keindahan pantai.',
             'image' => 'tanjung-bira.jpg',
-            'video' => ''
+            'video' => 'https://www.youtube.com/watch?v=zhPUmdGJ-w8',
+            'location' => 'https://maps.google.com/maps?q=pantai%20tanjung%20bira%20sulawesi&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
 
         Destination::create([
@@ -406,7 +420,8 @@ class DestinationSeeder extends Seeder
             mereka untuk mempermudah mereka membuka jalur ke Banda dan Maluku yang memang menjadi sentra Rempah. Penyerangan yang
             berlangsung lama itu mengakibatkan sebagian Benteng hancur, dan akibat kekalahan itu juga Raja Gowa dipaksa menandatangani Perjanjian Bongaya pada tangga 18 November 1667.',
             'image' => 'fort-rotterdam-makassar.jpg',
-            'video' => ''
+            'video' => 'https://www.youtube.com/watch?v=HymSYlKK9Mc',
+            'location' => 'https://maps.google.com/maps?q=benteng%20Fort%20Rotterdam%20Makassar&t=&z=13&ie=UTF8&iwloc=&output=embed'
         ]);
     }
 }

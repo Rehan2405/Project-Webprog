@@ -21,6 +21,7 @@ class CreateDestinations extends Migration
             $table->string('desc', 10000);
             $table->string('image');
             $table->string('video');
+            $table->string('location');
             $table->timestamps();
         });
     }
