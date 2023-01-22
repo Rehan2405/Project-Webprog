@@ -28,5 +28,9 @@ Route::get('/detail/{id}', [DetailController::class, 'index']);
 Route::get('/SaveReview', [DetailController::class, 'Save']);
 Route::get('/DeleteReview', [DetailController::class, 'Delete']);
 
+// update destination
+Route::get('/destination/update/{id}', [destinationcontroller::class, 'Edit'])->name('edit');
+Route::put('/destination/update/{id}', [destinationcontroller::class, 'Update']);
+
 Route::get('/about', [FavoriteController::class, 'about'])->name('about');
 Route::get('/favourite', [FavoriteController::class, 'destination'])->name('favourite');

@@ -24,7 +24,6 @@
                             <i class="card-text w-full bi bi-geo-alt">{{ Str::limit($dest->desc, 120) }}</i><br>
                             <a href="{{ url('detail/' . $dest->id) }}" class="btn btn-outline-info mt-3"> More Detail</a>
                         </div>
-
                     </div>
                 </div>
             @endforeach
