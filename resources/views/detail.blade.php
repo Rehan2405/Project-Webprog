@@ -57,6 +57,18 @@
             <img class="w-100" src="{{"https://img.youtube.com/vi/" . $thumbnail . "/maxresdefault.jpg"}}" alt="">
             <span class="font-italic">Watch our Journey</span>
         </a>
+        <div class="mx-2 d-flex flex-column">
+            <a href="/destination/update/{{ $destination->id }}" class="btn btn-secondary mb-2">Update</a>
+            @if(isset($favourite))
+                <button id="favouriteRemove" type="button" class="btn btn-secondary mb-2">
+                    &#9829; Remove favourite
+                </button>
+            @else
+                <button id="favouriteAdd" type="button" class="btn btn-secondary mb-2">
+                    &#9825; Add favourite
+                </button>
+            @endif
+        </div>
     </div>
 
     <div class="d-flex flex-column justify-content-center mb-5">
@@ -240,13 +252,13 @@
 
     function Save(){
         Swal.fire({
-                    didOpen: () => {
-                        Swal.showLoading()
-                    },
-                    allowEscapeKey: false,
-                    allowOutsideClick: false,
-                    title: 'Please Wait...'
-                });
+            didOpen: () => {
+                Swal.showLoading()
+            },
+            allowEscapeKey: false,
+            allowOutsideClick: false,
+            title: 'Please Wait...'
+        });
                 
         var url = window.location.href;
         var detail_id = url.substring(url.length - 1);
@@ -293,5 +305,56 @@
         });       
     }
 
+    function AddFavourite() {
+        var detail_id = {{ $destination->id }};
+
+        $.ajax({
+            type: 'GET',
+            url: '/AddFavourite',
+            data: {
+                destination_id: detail_id,
+            },
+            success:function(data){
+                Swal.close();
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Added favourite destination!',
+                    timer: 1000
+                });
+            }
+        })
+    }
+
+    function RemoveFavourite() {
+        var detail_id = {{ $destination->id }};
+
+        $.ajax({
+            type: 'GET',
+            url: '/DeleteFavourite',
+            data: {
+                destination_id: detail_id,
+            },
+            success:function(data){
+                Swal.close();
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Removed favourite destination!',
+                    timer: 1000
+                });
+            }
+        })
+    }
+
+    $('[id^=favourite]').click(function() {
+        if($(this).attr('id') === 'favouriteAdd') {
+            AddFavourite();
+            $(this).text('♥ Remove favourite');
+            $(this).attr('id', 'favouriteRemove');
+        } else {
+            RemoveFavourite();
+            $(this).text('♡ Add favourite');
+            $(this).attr('id', 'favouriteAdd')
+        }
+    });
 </script>
 @endsection

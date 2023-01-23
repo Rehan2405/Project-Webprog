@@ -36,15 +36,17 @@ class DestinationController extends Controller
             'title' => 'required',
             'description' => 'required',
             'todolist' => 'required',
-            'youtubelink' => 'required'
+            'youtubelink' => 'required',
+            'location' => 'required'
         ]);
 
         $destination = destination::findOrFail($id);
         $todoList = Todolist::findOrFail($destination->todolist_id);
 
         $destination->title = $request->title; 
-        $destination->desc = $request->description; 
+        $destination->desc = $request->description;
         $destination->video = $request->youtubelink;
+        $destination->location = $request->location;
 
         $todoList->list = $request->todolist;
         if($request->hasFile('thumbnail')) {

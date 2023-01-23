@@ -51,7 +51,12 @@
             </div>
     
             <div class="form-group">
-                <label for="thumbnail">Youtube link</label>
+                <label for="location">Location</label>
+                <input type="link" class="form-control" name="location" id="location" value="{{ isset($destination->location) ? $destination->location : '' }}">
+            </div>
+
+            <div class="form-group">
+                <label for="thumbnail">Image</label>
                 <input type="file" class="form-control" name="thumbnail" id="thumbnail">
             </div>
     

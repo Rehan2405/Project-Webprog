@@ -17,11 +17,12 @@ class DetailController extends Controller
         ->first();
         $todolist = DB::table('todolists')->where('id', '=', $request->id)
         ->first();
+        $favourite = DB::table('favourite_destinations')->where('destination_id', '=', $request->id)->first();
 
         // Thumbnail Section
         $start = strpos($destination->video, '=') + 1;
         $thumbnail = substr($destination->video, $start, strlen($destination->video));
-        return view('detail', compact('reviews', 'reviews_count', 'destination', 'todolist', 'thumbnail'));
+        return view('detail', compact('reviews', 'reviews_count', 'destination', 'todolist', 'thumbnail', 'favourite'));
     }
 
     public function Save(Request $req){

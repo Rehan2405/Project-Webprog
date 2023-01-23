@@ -36,5 +36,9 @@ Route::post('/insert', [InsertController::class, 'add']);
 Route::get('/destination/update/{id}', [destinationcontroller::class, 'Edit'])->name('edit');
 Route::put('/destination/update/{id}', [destinationcontroller::class, 'Update']);
 
+// favorite section
+Route::get('/AddFavourite', [FavoriteController::class, 'Save']);
+Route::get('/DeleteFavourite', [FavoriteController::class, 'Delete']);
+
 Route::get('/about', [FavoriteController::class, 'about'])->name('about');
 Route::get('/favourite', [FavoriteController::class, 'destination'])->name('favourite');
