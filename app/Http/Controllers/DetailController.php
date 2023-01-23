@@ -12,8 +12,16 @@ class DetailController extends Controller
     public function Index(Request $request){
         $reviews = DB::table('reviews')->where('destination_id', '=', $request->id)
         ->orderBy('index', 'asc')->get();
-        $reviews_count = Count($reviews);        
-        return view('detail', compact('reviews', 'reviews_count'));
+        $reviews_count = Count($reviews);
+        $destination = DB::table('destinations')->where('id', '=', $request->id)
+        ->first();
+        $todolist = DB::table('todolists')->where('id', '=', $request->id)
+        ->first();
+
+        // Thumbnail Section
+        $start = strpos($destination->video, '=') + 1;
+        $thumbnail = substr($destination->video, $start, strlen($destination->video));
+        return view('detail', compact('reviews', 'reviews_count', 'destination', 'todolist', 'thumbnail'));
     }
 
     public function Save(Request $req){

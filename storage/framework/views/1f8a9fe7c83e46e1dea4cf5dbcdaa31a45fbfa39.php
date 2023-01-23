@@ -1,9 +1,9 @@
-@section('navbar')
+<?php $__env->startSection('navbar'); ?>
     <!doctype html>
     <html lang="en">
 
     <head>
-        <title>@yield('navbar')</title>
+        <title><?php echo $__env->yieldContent('navbar'); ?></title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <nav class="navbar">
                 <div class="container w-50 ml-5">
-                    <img src="{{ asset('images/Logo.png') }}" alt="" style="height:45px; width:70px">
+                    <img src="<?php echo e(asset('images/Logo.png')); ?>" alt="" style="height:45px; width:70px">
                 </div>
             </nav>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -47,3 +47,4 @@
     </body>
 
     </html>
+<?php /**PATH C:\Users\edbert.hansel\Desktop\Project-Webprog\resources\views/navbar.blade.php ENDPATH**/ ?>

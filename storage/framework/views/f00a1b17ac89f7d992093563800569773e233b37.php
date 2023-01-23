@@ -1,5 +1,5 @@
-@extends('template')
-@section('body')
+
+<?php $__env->startSection('body'); ?>
 <span class="mt-5"></span>
 <style>
     .add-btn{
@@ -49,22 +49,23 @@
 <div style="background-color: aquamarine">
 <div class="container">
     <div class="text-center">
-        <h1>{{$destination->title}}</h1>
+        <h1><?php echo e($destination->title); ?></h1>
     </div>
     <br>
     <div class="d-flex justify-content-center mb-5">
-        <a href="{{$destination->video}}" target="_blank" class="w-75 border">
-            <img class="w-100" src="{{"https://img.youtube.com/vi/" . $thumbnail . "/maxresdefault.jpg"}}" alt="">
+        <a href="<?php echo e($destination->video); ?>" target="_blank" class="w-75 border">
+            <img class="w-100" src="<?php echo e("https://img.youtube.com/vi/" . $thumbnail . "/maxresdefault.jpg"); ?>" alt="">
             <span class="font-italic">Watch our Journey</span>
         </a>
     </div>
 
     <div class="d-flex flex-column justify-content-center mb-5">
-        <p class="text-justify" style="font-size: 20px">{{$destination->desc}}
-        <br><br>
-        <img src="{{ asset('images/' . $destination->image) }}" class="w-100" style="height: 400px" alt="...">
+        <p class="text-justify" style="font-size: 20px"><?php echo e($destination->desc); ?>
 
-        <span class="font-italic font-weight-bold">Things You Have To Do Here! : {{$todolist->list}}</span>
+        <br><br>
+        <img src="<?php echo e(asset('images/' . $destination->image)); ?>" class="w-100" style="height: 400px" alt="...">
+
+        <span class="font-italic font-weight-bold">Things You Have To Do Here! : <?php echo e($todolist->list); ?></span>
         </p>
     </div>
 </div>
@@ -79,40 +80,40 @@
         <div class="w-100">
             <div id="review" class="w-100">
 
-                @if($reviews_count == 0)
+                <?php if($reviews_count == 0): ?>
                     <div class="d-flex reviews m-1">
                         <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
                         <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
                         <input style="width:100%" type="text" onkeydown="Transform(this)" class="form-control border-0 dynamic-review">
                     </div>
                     
-                @else
-                    @foreach ($reviews as $item)
+                <?php else: ?>
+                    <?php $__currentLoopData = $reviews; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <div class="d-flex reviews m-1">
                             <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
                             <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
         
-                                {{-- For Input Type --}}
-                                @if($item->inputType == "INPUT")
-                                    <input style="width:100%; border:none" type="text" onkeydown="Transform(this)" class="{{$item->class}}" value="{{$item->value}}">
                                 
-                                {{-- For Image Type --}}
-                                @elseif($item->inputType == "IMG")
+                                <?php if($item->inputType == "INPUT"): ?>
+                                    <input style="width:100%; border:none" type="text" onkeydown="Transform(this)" class="<?php echo e($item->class); ?>" value="<?php echo e($item->value); ?>">
+                                
+                                
+                                <?php elseif($item->inputType == "IMG"): ?>
         
-                                    @if($item->class == "big")
-                                        <img style="height:400px;width:1000px" src={{$item->value}} class="{{$item->class}}">
+                                    <?php if($item->class == "big"): ?>
+                                        <img style="height:400px;width:1000px" src=<?php echo e($item->value); ?> class="<?php echo e($item->class); ?>">
                                     
-                                    @else
-                                        <img style="height:200px" src={{$item->value}} class="{{$item->class}}">
+                                    <?php else: ?>
+                                        <img style="height:200px" src=<?php echo e($item->value); ?> class="<?php echo e($item->class); ?>">
         
-                                    @endif
+                                    <?php endif; ?>
         
-                                @elseif($item->inputType == "TEXTAREA")
-                                    <textarea onkeydown="Transform(this)" class="{{$item->class}}" cols="60" rows="2">{{$item->value}}</textarea>
-                                @endif
+                                <?php elseif($item->inputType == "TEXTAREA"): ?>
+                                    <textarea onkeydown="Transform(this)" class="<?php echo e($item->class); ?>" cols="60" rows="2"><?php echo e($item->value); ?></textarea>
+                                <?php endif; ?>
                         </div>
-                    @endforeach
-                @endif
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                <?php endif; ?>
                 
             </div>
             <div class="w-100 mt-2">
@@ -294,4 +295,6 @@
     }
 
 </script>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('template', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\BINUS\Sem 5\Web Prog\LEC\Assignment\Project\Test\Project-Webprog\resources\views/detail.blade.php ENDPATH**/ ?>
