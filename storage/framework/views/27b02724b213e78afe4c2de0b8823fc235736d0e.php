@@ -2,7 +2,7 @@
 <html lang="en">
 <style>
     /* html {
-    background: url("https://wallpapercave.com/wp/wp5391568.jpg") no-repeat; 
+    background: url("https://wallpapercave.com/wp/wp5391568.jpg") no-repeat;
     background-size: cover;
 } */
 </style>
@@ -21,8 +21,9 @@
 </head>
 <body>
     <?php echo $__env->make('navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-    <br><br>
-    <?php echo $__env->yieldContent('body'); ?>
     
+    <?php echo $__env->yieldContent('body'); ?>
+
 </body>
-</html><?php /**PATH C:\Users\edbert.hansel\Desktop\Project-Webprog\resources\views/template.blade.php ENDPATH**/ ?>
+</html>
+<?php /**PATH C:\Users\edbert.hansel\Desktop\Project-Webprog\resources\views/template.blade.php ENDPATH**/ ?>

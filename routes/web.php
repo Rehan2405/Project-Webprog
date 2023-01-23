@@ -28,6 +28,10 @@ Route::get('/detail/{id}', [DetailController::class, 'index']);
 Route::get('/SaveReview', [DetailController::class, 'Save']);
 Route::get('/DeleteReview', [DetailController::class, 'Delete']);
 
+// insert destination
+Route::get('/insert', [InsertController::class, 'create']);
+Route::post('/insert', [InsertController::class, 'add']);
+
 // update destination
 Route::get('/destination/update/{id}', [destinationcontroller::class, 'Edit'])->name('edit');
 Route::put('/destination/update/{id}', [destinationcontroller::class, 'Update']);
