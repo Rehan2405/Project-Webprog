@@ -1,15 +1,25 @@
 <?php $__env->startSection('content', 'search'); ?>
 
 <?php $__env->startSection('body'); ?>
-    
+    <style>
+        body {
+            /* background-image: url('https://wallpaperaccess.com/full/1510545.jpg'); */
+            background-image: url('https://wallpaperaccess.com/full/1510533.jpg');
+            /* background-image: url('https://wallpaperaccess.com/full/1510585.jpg'); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+
+        }
+    </style>
 
     <div class="container">
         <div class="text-black">
             
-            <p style="font-size: 40px; font-weight:bold" >Search Destination</p>
+            <p class="mt-3" style="font-size: 40px; font-weight:bold" >Search Destination</p>
             <form action="<?php echo e(route('search_dest')); ?>" method="GET">
                 <?php echo csrf_field(); ?>
-                <div class="input-group mt-4 mb-4">
+                <div class="input-group mb-4">
                     <input type="text" class="form-control rounded" placeholder="Search" aria-label="Search"
                         aria-describedby="search-addon" name="search" />
                 </div>

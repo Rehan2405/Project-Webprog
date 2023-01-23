@@ -2,23 +2,25 @@
 @section('content', 'search')
 
 @section('body')
-    {{-- <style>
+    <style>
         body {
-            /* background-image: url('https://wallpaperaccess.com/full/1124103.jpg'); */
+            /* background-image: url('https://wallpaperaccess.com/full/1510545.jpg'); */
+            background-image: url('https://wallpaperaccess.com/full/1510533.jpg');
+            /* background-image: url('https://wallpaperaccess.com/full/1510585.jpg'); */
             background-repeat: no-repeat;
             background-size: cover;
             background-blend-mode: darken;
 
         }
-    </style> --}}
+    </style>
 
     <div class="container">
         <div class="text-black">
             {{-- <h1>Search Destination</h1> --}}
-            <p style="font-size: 40px; font-weight:bold" >Search Destination</p>
+            <p class="mt-3" style="font-size: 40px; font-weight:bold" >Search Destination</p>
             <form action="{{ route('search_dest') }}" method="GET">
                 @csrf
-                <div class="input-group mt-4 mb-4">
+                <div class="input-group mb-4">
                     <input type="text" class="form-control rounded" placeholder="Search" aria-label="Search"
                         aria-describedby="search-addon" name="search" />
                 </div>

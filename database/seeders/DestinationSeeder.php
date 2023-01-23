@@ -361,7 +361,33 @@ class DestinationSeeder extends Seeder
             tamu yang mengunjunginya. Sungguh pemandangan luar biasa indah. Tepukan dari teman saya membuyarkan lamunan saya
             tentang Toraja pagi itu.Setelah menyantap sarapan pagi di sebuah hotel termegah di Tana Toraja ini saya pun segera
             bergegas menuju mobil yang akan membawa saya berkeliling Toraja ini. Pak Udin dan Pak Emir sudah menunggu di loby
-            hotel, mereka lah yang akan mengantarkan saya berkeliling Tana Toraja ini.',
+            hotel, mereka lah yang akan mengantarkan saya berkeliling Tana Toraja ini. Langit biru menyambut kami pagi itu. Sungguh
+            cuaca yang sangat bersahabat sekali. Target utama perjalanan ini adalah upacara Rambu Solo, yaitu upacara pemakaman
+            masyarakat Toraja. Biasanya dengan prosesi penyembelihan kerbau, tapi uniknya adalah kerbau-kerbau tyersebut tidak
+            di sembelih seperti layaknya tapi di tebas lehernya. Di toraja ini masyarakatnya mempunyai adat yang unik, yang mana
+            mayat tidak langsung di kuburkan tapi di simpan dulu di dalam Tongkonan (rumah adat Toraja) sampai keluarganya
+            mempunyai biaya untuk menyelenggarakan prosesi Rambu Tuka tersebut, dan itu memakan biaya yang tidak sedikit, jadi
+            terkadang di simpulkan bahwa Orang toraja itu bekerja keras untuk mati.
+
+            “Itu ada rombongan berbaju hitam-hitam didepan” kata Pak emir yang membuyarkan kembali lamunan saya akan Tana Toraja
+            yang indah ini. Menurut pak Emir apabila kita menemukan rombongan berbaju serba hitam berarti tidak jauh dari situ
+            sedang di gelar prosesi Rambu Solo, dan setelah bertanya ke rombongan tersebut ternyata benar sedang di gelar prosesi
+            pemakaman di sebuah halaman tongkonan, setelah melihat onggokan-onggokan daging saya menghela nafas panjang…benar
+            ternyata disitu teronggok tujuh kepala kerbau..sungguh prosesi yang mahal…dan itu akan lebih mahal jika yang meninggal
+            adalah kalangan bangsawan. Setelah puas dengan menikmati prosesi adat rambu solo perjalanan dilanjutkan menyusuri
+            jalan-jalan kecil beraspal, rupanya mobil mengarah ke Suaya, baru saja memasuki komplek pemakaman Suaya, dari arah
+            belakang saya terdengar suara teriak-teriakan ramai sekali, pak Emir langsung memberi isyarat kepada saya bahwa itu
+            adalah prosesi pengusungan Mayat, sayapun bergegas berlari menghampiri kerumunan tersbut, rupanya menurut keterangan
+            pak Emir jika mereka sedang mengusung mayat harus bernyanyi keras-keras dimaksudkan agar roh jahat tidak memasuki raga
+            si mayat, dan lagunya menggelitik alam sadar saya, yaitu lagu “Tak gendong” nya Alm Mbah Surip.
+
+            Setelah mereka menjauh untuk menuju pekuburan batu saya pun melanjutkan menikmati komplek pemakaman Suaya tersebut.
+            Suaya adalah komplek kubur batu kerjaan muslim di Toraja, mereka dikenal dengan bangsawan dari Sangalla, disini bisa
+            ditemukan Liang Batu yaitu kuburan yang di pahat di dinding tebing di ketinggian, namun sayang kondisinya sedikit tidak
+            terawat, Perjalanan dilanjutkan mengunjungi komplek pekuburan bayi di sebuah Phon, jadi bayi-bayi uang meninggal mayatnya
+            di masukkan kedalam pohon yang sudah di lubangi terlebih dahulu, dan lubang itu akan menutup sendiri seiring tumbuhnya
+            pohon tersebut, dari dalam mobil terdengan sayup-sayup suara musik dari bambu, ternyata sedang ada pertujukan kecil dari
+            anak-anak Toraja kepada para wisatawan asing yang berkunjung.',
             'image' => 'tana-toraja.jpg',
             'video' => 'https://www.youtube.com/watch?v=6x46n9viTts',
             'location' => 'https://maps.google.com/maps?q=tana%20toraja&t=&z=13&ie=UTF8&iwloc=&output=embed'
@@ -377,7 +403,40 @@ class DestinationSeeder extends Seeder
 
             Setelah beranjrut-anjrutan di atas speed boat dari dermaga Jailolo selama hampir satu jam lamanya, tibalah saya di sebuah dermaga
             Dhufa-Dhufa di kota Ternate. Cuaca siang itu terlihat menyengat sekali, matahari seolah dengan semangat sekali untuk membakar bumi
-            dengan sinarnya. Dermaganya sendiri terlihat sederhana, tidak ada kesan mewah ataupun modern sama sekali.',
+            dengan sinarnya. Dermaganya sendiri terlihat sederhana, tidak ada kesan mewah ataupun modern sama sekali. Terlihat juga jajaran
+            boat yang sedang menunggu antrian untuk menyeberangkan penumpangnya ke teluk Jailolo. Uniknya justru terlihat disini, masing-masing
+            daerah dengan tujuan pulau Halmahera di berangkatkan dari pelabuhan yang berbeda di kota Ternate. Jika hendak mencapai daerah
+            Sofifi maka kita akan berangkat dari Pelabuhan KotaBaru, berbeda jika kita hendak menjelejah Jailolo pelabuhan yang hendak kita
+            tuju untuk menyeberang adalah pelabuhan Dhufa-dhufa. Lain lagi ketika kita hendak menyeberang ke pulau Tidore dan Maitara,
+            pelabuhan yang disinggahi untuk kemudian menyeberang adalah Pelabuhan Bastiong. So jangan salah pilih pelabuhan jika hendak
+            melanjutkan perjalanan dari kota Rempah ini.
+
+            Amboy indahnyaaaa. Begitulah benak saya berfikir ketika berada di sebuah benteng yang terletak di atas bukit kelurahan Toloko.
+            Letaknya yang diatas ketinggian memudahkan siapapun yang berada diatas Benteng untuk memantau aktifitas musuh. Dari atas benteng
+            ini sendiri mata kita dimanjakan oleh panorama laut yang indah dan keindahan gunung Gamalama yang sudah tidak terbantahkan lagi.
+            Ketika memasuki lokasi benteng nya sendiri hanya terlihat seperti sebuah taman kecil, namun ketika  sudah melewati lorong-lorong
+            di dalam benteng, ternyata banyak sekali lorong-lorong yang mengarah ke ruangan bawah tanah plus anak tangga yang tidak dibatasi
+            oleh pembatas. Kesan angker segera saya rasakan begitu berada di dalamnya. Sejatinya benteng yang di bangun oleh  Governor Jendral
+            Francisco Serrao dari Portugis pada tahun 1512 ini di peruntukkan sebagai tempat peristirahatan putri-ptri Portugis dan tempat
+            penympanan logistic, namun keberadaannya kini layak untuk dijadikan sebuah destinasi wisata jika kita berkunjung ke Kota ternate.
+
+            Puas menikmati indahnya benteng Tolukko kok perut rasanya sudah protes untuk diajak melanjutkan peralanan ini. Dari keterangan
+            salah seorang sahabat yang bermukim disana saya mendapatkan keterangan untuk mengunjungi sebuah pasar Gamalama jika hendak
+            merasakan kulineran ala Ternate yang sesungguhnya. Saya hanya bisa membayangkan makan ditengah pasar dengan keramaian yang luar
+            biasa dan bau-bau an yang menghilangkan selera makan. Namun keadaan berubah 360 derajat ketika kaki ini melangkah memasuki sebuah
+            rumah makan sederhana namun lengkap di area pasar ini. “rumah Makan Popeda Gamalama” begitlah  tulisan yang saya baca di atas
+            pintu rumah makan ini.  Cuma ada 3 meja di ruangan sempit itu yang membentuk huruf U. sebuah keluarga besar terlihat sedang asik
+            menikmati  nikmatnya menu-menu yang tersaji memenuhi meja tersebut. Mereka terlihat berpakaian rapi sekali bahkan salah satunya
+            masih mengenakan Toga. Ada apakah ini? Ternyata disana mempunyai sebuah tradisi untuk merayakan anggota keluarga yang lulus dari
+            bangku kuliah dengan makan dan berdoa bersama, selain itu biasanya juga di gelar acara meriah sekali pada malam harinya di
+            kediaman masing-masinng warga yang lulus kuliah tersebut. Baronggeng Namanya, sebuah acara yang biasanya di manfaatkan para
+            muda-mudi untuk berekspresi dengam menari.
+
+            Menu yang tersaji dimeja juga beragam sekali. Terlihat sebaskom popeda (masyarakat Papua dan Ambon sering menyebutnya Papeda).
+            Selain itu juga terlihat sayur lilin, sayur atau gulai yang tadinya membuat saya sumringah karena saya pikir itu adalah gulai
+            telur ikan, karena bentuknya mirip sekali dengan telur ikan namun ternyata bukan. Terlihat juga Kuah soru yaitu kuah yang
+            biasanya dipergunakan untuk makan popeda, dimasak bebarengan dengan ikan asar (ikan asap), rasanya sendiri asam pedas  dengan
+            aroma ikan asar yang sangat kuat.',
             'image' => 'ternate.jpg',
             'video' => 'https://www.youtube.com/watch?v=hgbXUwHNsFc',
             'location' => 'https://maps.google.com/maps?q=Ternate&t=&z=13&ie=UTF8&iwloc=&output=embed'
@@ -391,7 +450,31 @@ class DestinationSeeder extends Seeder
             'desc' => 'Petang itu terasa begitu sempurna. Beberapa anak kecil sedang asik bermain loncat-loncatan di ujung dermaga.
             Beberapa kapal kayu diam tertambat dipinggir pantai.  Sementara itu semburat merah senja terpantul dengan begitu indah
             di perairan pulau wangi-wangi. Rumah-rumah panggung juga seolah melengkapi keindahan lukisan alam yang terjadi petang
-            itu di Wakatobi.',
+            itu di Wakatobi. Saya hanya duduk di pinggir pantai sambail sesekali melemparkan pandangan ke segala arah. Yang ada
+            hanya keheningan dan keindahan. Petang yang hening dengan bermandikan cahaya senja kuning keemasan. Pulau Wangi-wangi
+            bersiap menyambut malam yang kembali hadir. Pulau Wangi-wangi adalah pintu masuk jika kita ingin mengeksplore keindahan Wakatobi.
+            Biasanya para pejalan singgah dulu ke Pulau Wangi-wangi untuk kemudian melanjutkan perjalanan ke pulau-pulau lainnya seperti Pulau
+            Kaledupa, Tomia dan Binongko. Wakatobi adalah singkatan dari keempat pulau besar itu. Dulunya sebelum menjadi kabupaten sendiri
+            pulau ini bernama pulau Tukang Besi. Begitu ada pemekaran Wilayah jadilah kabupaten Wakatobi yang kini menjadi sorotan masyarakat
+            dunia sebagai destinasi wisata bawah air yang menarik.
+
+            Wanci adalah sebuah kelurahan di kecamatan Wangi-wangi, selain itu Wanci juga menjadi ibukota kabupaten Wakatobi.  DI wanci ini
+            lah berbagai denyut nadi kehidupan bermasyarakat berlangsung. Wanci adalah kota ter ramai dari kabupaten Wakatobi. Beberapa bank
+            juga berdiri disini. Dan Wanci adalah tempat dimana penghuni pulau-pulau lain berbelanja memenuhi kebutuhan hidup mereka. Oh ya
+            jika hendak mengunjungi wakatobi pastikan dompet anda sudah terisi di Wanci, soalnya sewaktu saya ke beberapa pulau disana tidak
+            menemukan mesin ATM selain di Wanci. Yang sering orang lewatkan adalah, wanci hanya dijadikan tempat persinggahan. Sementara di
+            Wanci dan sekitarnya itu banyak sekali destinasi wisata menarik. Sebut saja Liya togo, Kampung Bajo Mola, Goa-goa, mercusuar bahkan
+            ivesite juga tersebar di sini. Mau menginap di Wanci tidak usah khawatir, dari range 50.000 hingga 2juta ada kok disini, tinggal
+            sesuaikan dengan budget kita saja, silahkan pilih ada penginapan Jelly, Wisata beach hotel atau Patuno resort yang asik harga dan
+            pemandangannya.
+
+            Belum ke Wakatobi kalau gak nyebur. Kebetulan saya dapat kesempatan menikmati keindahan bawah laut Wakatobi, meski hanya di sekitaran
+            pulau Wangi-wangi saja. Padahal spot terindah menyelam konon katanya berada di pulau Hoga. Namun tak apalah, toh saya juga bukan
+            penyelam professional. Pulau Kapota nama dive spotnya. Tidak terlalu jauh dari Wanci, mungkin hanya membutuhkan waktu sekitar 20 menit
+            dengan speedboat. Terumbu karangnya masih alami dan sehat. Seperti kita tahu Wakatobi masuk dalam segituga coral dunia. Beragam jenis
+            coral ada si wakatobi, tuh bangga kan negeri kita punya asset bawah laut sebegitu indahnya, harus terus dijaga ya kawan. So
+            Wangi-wangi itu punya banyak sekali spot bagus yang asik untuk di eksplore, jadi kalau ke Wakatobi jangan hanya ampir transit
+            ya di Wanci nya…',
             'image' => 'wangi-wangi.jpg',
             'video' => 'https://www.youtube.com/watch?v=KHQxCM868VA',
             'location' => 'https://maps.google.com/maps?q=wangi%20wangi%20wakatobi&t=&z=13&ie=UTF8&iwloc=&output=embed'
@@ -404,7 +487,30 @@ class DestinationSeeder extends Seeder
             // https://lostpacker.com/tanjung-bira-sulawesi/
             'desc' => 'Pantai Tanjung Bira terletak di kecamatan Bira, kabupaten Bulukumba dan masih masuk dalah wilayah propinsi Sulawesi
             Selatan. Pantai pasir putih dengan air lautnya yang jernih hingga kita bis amelihat ke dasar pasir pantai adalah menu andalan
-            yang wajib di datangi bagia siapa saja yang merindukan keindahan pantai.',
+            yang wajib di datangi bagia siapa saja yang merindukan keindahan pantai. Deretan warung-warung kecil berjajar rapi di pinggiran
+            pantai pasir putih yang terlihat aduhai. beberapa pengunjung juga sedang terlihat asik bermain di jernihnya air laut yang mempesona.
+            Angin laut berhembus dengan perlahan, sementara langit di atas tanjung bira terlihat begitu indah di hiasi gumpalan-gumpalan awan
+            putih yang berderet.
+
+            Kaki saya melangkah hati-hati diatas bebatuan karang di depan Bira view. Bira view adalah beberapa rumah pangung yang di peruntukkan
+            buat penginapan, namun sayangnya kondisinya memprihatinkan. Saya harus tetap waspada ketika melangkahkan kaki di atas bebatuan
+            karang itu, karena memang permukaanya terlihat terjal dan siang yang begitu menyengat.
+
+            Sedang asik memotret keindahan Tanjung Bira ternyata sandal saya putus, huaaaa bisakah saya tetap melanjutkan berjalan di atas
+            bebatuan karang yang panan dan terjal ini tanpa alas kaki? beberapa kali saya mencoba jalan jinjit tapi ternyata tetap saya sakit
+            terkena batu karang yang “membara” dan tajam itu. Tapi bukan pejalan namanya kalau sampai kehabisan akal. Saya ikatkan sapu tangan
+            untuk menempelken sandal saya yang putus ke telapak kaki saya, dan aman akhirnya saya bisa mengabadikan tanjung bira dalam foto dan
+            video dengan tenang ha ha. Siang di tanjung bira sungguh terik, jika tidak mau berpanas-panasan, duduklah di salah satu warung
+            sambil menikmati sebutir kelapa muda atau sebotol minuman dingin. Pemandangan yang tercipta di hadapan sungguh begitu sempurna.
+
+            Langit biru diatas pantai juga semakin melengkapi keindahan yang ada. Jangan berpuas hati dulu dengan keindahan Tanjung Bira. Pantai
+            Tanjung Bira terkenal dengan pasir pantainya yang selembut tepung terigu. Pemandangan garis pantai yang membujur panjang dan indah
+            membentang hampir sepanjang mata memandang. Di sebagian pantainya di batasi dengan tebing-tebing karang yang terjal, namun komposisi
+            ini jadi lebih menarik karena tebing-tebing terjal bertemu dengan jernih nya air laut dan putihnya pasir pantai. Sebuah komposisi
+            lukisan alam yang sangat sempurna. Tidak ada ungkapan yang bisa saya ucapkan selain sempurna jika melihat keindahan Tanjung Bira.
+            Selain keindahan-keindahan pantai dan daratnya, Tanjung Bira juga punya pesona menarik lainnya, kehidupan bawah lautnya. Ada spot
+            menyelam yang sudah terkenal sekali di antara para penyelam baik di Indonesia maupun di luar negeri. Pulau Kambing namanya. Letaknya
+            juga tidak terlalu jauh dari pantai pasir putih di Tanjung Bira. Untuk yang sudah punya ijin menyelam silahkan jajal kemampuan anda.',
             'image' => 'tanjung-bira.jpg',
             'video' => 'https://www.youtube.com/watch?v=zhPUmdGJ-w8',
             'location' => 'https://maps.google.com/maps?q=pantai%20tanjung%20bira%20sulawesi&t=&z=13&ie=UTF8&iwloc=&output=embed'
@@ -415,10 +521,33 @@ class DestinationSeeder extends Seeder
             'todolist_id' => 15,
             'title' => 'Belajar Sejarah dari benteng Fort Rotterdam Makassar',
             // https://lostpacker.com/fort-rotterdam/
-            'desc' => 'Banteng ini pernah hancur pada masa penjajahan Belanda. Kesultanan Gowa kala itu di pimpin oleh Sultan
-            Hasanuddin. Penyerangan kala itu Belanda mencoba merebut jalur perdagangan rempah-rempah dan memperluas sayap kekuasaan
-            mereka untuk mempermudah mereka membuka jalur ke Banda dan Maluku yang memang menjadi sentra Rempah. Penyerangan yang
-            berlangsung lama itu mengakibatkan sebagian Benteng hancur, dan akibat kekalahan itu juga Raja Gowa dipaksa menandatangani Perjanjian Bongaya pada tangga 18 November 1667.',
+            'desc' => 'Sebuah becak terparkir di pintu masuk benteng. Lantai kawasan benteng juga masih terlihat basah akibat hujan yang baru
+            saja mengguyur Makassar. Hiruk pikuk terlihat di jalan raya yang berada di depan benteng. Sementara langit  Makassar sore itu juga
+            memperlihatkan pesona nya yang indah.
+
+            Akses menuju Benteng ini mudah sekali. Jika kita berada di pantai Losari, tinggal jalan kaki menyusuri jalanan di pinggir pantai
+            kearah barat saja pasti akan ketemu. Ketika memasuki kawasan benteng saya seolah terlempar pada masa-masa dimana benteng ini
+            dibangun. Raja Gowa ke-X, Karaeng Tunipalangga Ulaweng sangat berjasa dalam pembangunan benteng ini pada tahun 1545.
+
+            Banteng ini pernah hancur pada masa penjajahan Belanda. Kesultanan Gowa kala itu di pimpin oleh Sultan Hasanuddin. Penyerangan
+            kala itu Belanda mencoba merebut jalur perdagangan rempah-rempah dan memperluas sayap kekuasaan mereka untuk mempermudah mereka
+            membuka jalur ke Banda dan Maluku yang memang menjadi sentra Rempah. Penyerangan yang berlangsung lama itu mengakibatkan sebagian
+            Benteng hancur, dan akibat kekalahan itu juga Raja Gowa dipaksa menandatangani Perjanjian Bongaya pada tangga 18 November 1667.
+
+            Hmmm Begitulah fakta sejarah yang saya tangkap dari keterangan yang saya temukan di museum. Benteng ini kini ramai di datangi
+            wisatawan maupun pelajar yang ingin belajar sejarah tentang negeri ini. Benteng ini juga pernah menjadi saksi kisah hidup seorang
+            Pengeran Diponegoro. Perang Diponegoro yang berkobar di tanah Jawa memaksa Belanda untuk bermain culas ketika mengajak sang
+            Pangeran untuk menandatangani perundingan damai. Di saat itulah sang pangeran pemberani ini di tangkap dan di jebloskan ke dalam
+            penjara sempit di salah satu sudut Benteng ini.
+
+            Berkeliling area benteng membuat kita bersyukur dan takjub dengan kemegahannya. Dinding benteng ini kokoh menjulang setinggi 5 meter
+            dan setebaj 2 meter, Wowww. Sebuah bangunan menyerupai gereja terdapat di tengah area, tapi menurut informasi dari seorang ahli
+            sejarah yang menemani saya berkeliling disana itu bukanlah gereja melainkan ruang pertemuan.
+
+            Ketika mengunjungi Fort Rotterdam jangan lupa untuk naik ke atas bastion, yaitu bangunan yang lebih kokoh dan posisinya lebih
+            tinggi terletak di setiap sudut benteng. Cobalah naik kesalah satunya dan nikmatilah langit senja makasar dari sana, Amazingg.
+            Kembali saya diajak belajar tentang sejarah negeri ini dari perjalanan singkat saya di Makassar. Dari belajar hal-hal seperti ini,
+            nasionalisme saya seolah berkobar. Saya merasa lebih mencintai negeri ini sampai kapanpun dan dimanapun. Semoga.',
             'image' => 'fort-rotterdam-makassar.jpg',
             'video' => 'https://www.youtube.com/watch?v=HymSYlKK9Mc',
             'location' => 'https://maps.google.com/maps?q=benteng%20Fort%20Rotterdam%20Makassar&t=&z=13&ie=UTF8&iwloc=&output=embed'

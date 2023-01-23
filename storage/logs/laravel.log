@@ -7150,3 +7150,119 @@ Did you mean one of these?
 [stacktrace]
 #0 {main}
 "} 
+[2023-01-23 10:16:55] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:17:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:18:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:19:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:20:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:21:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:22:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:23:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:24:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:25:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:26:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:27:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:28:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:29:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:30:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:31:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:32:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:33:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:34:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:35:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:36:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:37:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:38:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:39:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:40:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:41:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:42:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:43:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-23 10:44:32] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected end of file at D:\\BINUS\\Sem 5\\Web Prog\\LEC\\Assignment\\Project\\Test\\Project-Webprog\\app\\Models\\Review.php:16)
+[stacktrace]
+#0 {main}
+"} 

@@ -32,7 +32,7 @@
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destination</a>
+                        <a class="nav-link" href="/favourite">Destination</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/search">Search</a>
