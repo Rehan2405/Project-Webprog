@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             DestinationSeeder::class,
             TodolistSeeder::class,
+            UserSeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
         // destination::create([

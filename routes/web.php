@@ -17,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/', [destinationcontroller::class, 'dest'])->name('destinations');
 
 Route::get('/search', [SearchController::class, 'search'])->name('search');
@@ -42,3 +44,6 @@ Route::get('/DeleteFavourite', [FavoriteController::class, 'Delete']);
 
 Route::get('/about', [FavoriteController::class, 'about'])->name('about');
 Route::get('/favourite', [FavoriteController::class, 'destination'])->name('favourite');
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
