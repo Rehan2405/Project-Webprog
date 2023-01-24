@@ -18,6 +18,8 @@ class CreateDestinationTable extends Migration
             $table->string('image');
             $table->string('name');
             $table->string('desc');
+            $table->string('location');
+            $table->string('todolist');
             $table->timestamps();
         });
     }

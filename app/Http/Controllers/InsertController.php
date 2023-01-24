@@ -9,22 +9,52 @@ class InsertController extends Controller
 {
     public function create() {
         return view('insert', [
-            'destination' => destination::all()
+            'destinations' => destination::all()
         ]);
     }
+
     public function add(Request $request) {
 
         $validation = $request->validate([
-            'title' => 'required',
-            'description' => 'required',
-            'link' => 'required|integer',
-            'photo_url' => 'required|file|image|mimes:png,jpg'
+            'name' => 'required',
+            'desc' => 'required',
+            'todolist' => 'required',
+            'location' => 'required',
+            'image' => 'required|file|image|mimes:png,jpg'
         ]);
 
-        $validation['photo_url'] = $request->file('photo_url')->store('image');
+        $validation['image'] = $request->file('image')->store('image');
 
-       destination::create($validation);
+        destination::create($validation);
 
         return redirect('/home')->with('success', 'Product has been added');
     }
 }
+    // public function store(Request $request)
+    // {
+    //     //validate form
+    //     $this->validate($request, [
+    //         'image'     => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+    //         'title'     => 'required|min:5',
+    //         'desc'   => 'required|min:10',
+    //         'location'   => 'required|min:10',
+    //         'todolist',
+    //     ]);
+
+    //     //upload image
+    //     $image = $request->file('image');
+    //     $image->storeAs('public/images', $image->hashName());
+
+    //     //create post
+    //     destination::create([
+    //         'image'     => $image->hashName(),
+    //         'title'     => $request->title,
+    //         'desc'   => $request->desc,
+    //         'location'   => $request->location,
+    //         'todolist'   => $request->todolist,
+    //     ]);
+
+    //     //redirect to index
+    //     return redirect()->route('insert')->with(['success' => 'Data Berhasil Disimpan!']);
+    // }
+
