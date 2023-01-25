@@ -17,9 +17,10 @@ class InsertController extends Controller
     public function add(Request $request) {
 
         Todolist::create([
-            'todolist' => $request->list
+            'list' => $request->todolist,
+            'image' => $request->image
         ]);
-        $validation = $request->validate([
+        $validation = $request->validate([  
             'title' => 'required',
             'desc' => 'required',
             'todolist' => 'required',
@@ -28,14 +29,24 @@ class InsertController extends Controller
             'image' => 'required|file|image|mimes:png,jpg'
         ]);
 
-        $validation['image'] = $request->file('image')->store('images');
+        // $validation['image'] = $request->file('image')->store('images');
+        $image = $request->file('image');
+        $imageName = time().'.'.$image->getClientOriginalExtension();
+        $image->move(public_path('Images'), $imageName);
 
-        Todolist::create([
-            'todolist' => $request->list
+        $todolist_data = Todolist::query()->latest()->first();
+        $foreign_key = $todolist_data->id;
+
+        Destination::create([
+            'title' => $request->title,
+            'desc' => $request->desc,
+            'todolist' => $request->todolist,
+            'video' => $request->video,
+            'location' => $request->location,
+            'image' => $imageName,
+            'review_id' => $foreign_key,
+            'todolist_id' => $foreign_key,
         ]);
-
-        Destination::create($validation);
-
 
         return redirect('/home')->with('success', 'Product has been added');
     }
