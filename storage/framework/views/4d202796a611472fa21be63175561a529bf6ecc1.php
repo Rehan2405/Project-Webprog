@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('content', 'search'); ?>
 
 <?php $__env->startSection('body'); ?>

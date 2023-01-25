@@ -4,6 +4,7 @@ use App\Http\Controllers\destinationcontroller;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\FavoriteController;
+use App\Http\Controllers\InsertController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -46,3 +47,7 @@ Route::get('/favourite', [FavoriteController::class, 'destination'])->name('favo
 Auth::routes();
 
 Route::get('/home', [destinationcontroller::class, 'dest'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

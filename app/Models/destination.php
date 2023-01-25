@@ -12,8 +12,4 @@ class Destination extends Model
     public function todolist(){
         return $this -> hasMany(Todolist::class);
     }
-    
-    public function favourite_destination(){
-        return $this -> hasMany(FavouriteDestination::class);
-    }
 }

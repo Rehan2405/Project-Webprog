@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('content', 'home'); ?>
 
 <?php $__env->startSection('body'); ?>
@@ -18,6 +19,7 @@
     </style>
 
     <body>
+        
         <!-- Hero Area -->
         <div class="container hero-area">
             <div class="d-flex text justify-content-center">
