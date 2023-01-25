@@ -43,7 +43,7 @@
                 <h1>Latest Post</h1>
             </div>
             @auth
-                @if(!is_null(Auth::user()->is_admin))
+                @if (!is_null(Auth::user()->is_admin))
                     <a href="/insert">
                         <button type="button" class="btn btn-danger mb-2">&#x2B; Add Destination</button>
                     </a>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 @endforeach
-        </div>
+            </div>
 
 
     </body>

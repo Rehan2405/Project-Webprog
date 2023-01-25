@@ -29,9 +29,9 @@ class DestinationController extends Controller
 
         return view('edit', compact('destination', 'todolist'));
     }
-    
+
     public function Update($id, Request $request){
-        
+
         $request->validate([
             'title' => 'required',
             'description' => 'required',
@@ -43,7 +43,7 @@ class DestinationController extends Controller
         $destination = destination::findOrFail($id);
         $todoList = Todolist::findOrFail($destination->todolist_id);
 
-        $destination->title = $request->title; 
+        $destination->title = $request->title;
         $destination->desc = $request->description;
         $destination->video = $request->youtubelink;
         $destination->location = $request->location;
@@ -63,7 +63,15 @@ class DestinationController extends Controller
 
         $destination->save();
         $todoList->save();
-        
-        return redirect('/detail/'.$destination->id)->with('message', 'Destination updated');  
+
+        return redirect('/detail/'.$destination->id)->with('message', 'Destination updated');
     }
+
+    // public function DeleteDest(Request $req){
+    //     DB::table('destinations')
+    //     ->where('id', '=', $req->detail_id)
+    //     ->delete();
+
+    //     return;
+    // }
 }

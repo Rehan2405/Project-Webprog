@@ -36,6 +36,8 @@ Route::post('/insert', [InsertController::class, 'add'])->middleware('Admin');
 Route::get('/destination/update/{id}', [destinationcontroller::class, 'Edit'])->middleware('Admin')->name('edit');
 Route::put('/destination/update/{id}', [destinationcontroller::class, 'Update'])->middleware('Admin');
 
+// Route::put('/DeleteDestination', [destinationcontroller::class, 'DeleteDest'])->middleware('Admin');
+
 // favorite section
 Route::get('/AddFavourite', [FavoriteController::class, 'Save'])->middleware('Admin');
 Route::get('/DeleteFavourite', [FavoriteController::class, 'Delete'])->middleware('Admin');

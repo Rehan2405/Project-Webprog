@@ -8,7 +8,7 @@
             <div class="text-white">
                 <div class="row justify-content-center">
                         <div class="card" style="background-color: rgba(255, 160, 122, 1)">
-                            <div class="card-header text-center" style="font-size: 30px; font-weight: bold">Sign In</div>
+                            <div class="card-header text-center" style="font-size: 30px; font-weight: bold">Login to Edit your Blog!</div>
                             <div class="card-body">
                                 <form method="POST" action="<?php echo e(route('login')); ?>">
                                     <?php echo csrf_field(); ?>

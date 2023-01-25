@@ -1,8 +1,9 @@
+
 <?php $__env->startSection('body'); ?>
     <span class="mt-5"></span>
     <style>
         .add-btn {
-            color: aquamarine;
+            color: white;
             align-self: center;
             cursor: pointer;
         }
@@ -18,16 +19,16 @@
         }
 
         .reviews>input {
-            background-color: aquamarine;
+            background-color: white;
             transition: 0.3s
         }
 
         .reviews:hover>input {
-            background-color: white;
+            background-color: aquamarine;
         }
 
         .reviews>span {
-            color: aquamarine;
+            color: white;
             transition: 0.3s
         }
 
@@ -50,20 +51,24 @@
                 <h1><?php echo e($destination->title); ?></h1>
             </div>
             <br>
-            <div class="mx-2 d-flex justify-content-center gap-3">
-                <a href="/destination/update/<?php echo e($destination->id); ?>" class="btn btn-primary mb-2">
-                    Update
-                </a>
-                <?php if(isset($favourite)): ?>
-                    <button id="favouriteRemove" type="button" class="btn btn-secondary mb-2">
-                        &#9829; Remove from favourite
-                    </button>
-                <?php else: ?>
-                    <button id="favouriteAdd" type="button" class="btn btn-danger mb-2">
-                        &#9825; Add to favourite
-                    </button>
+            <?php if(auth()->guard()->check()): ?>
+                <?php if(!is_null(Auth::user()->is_admin)): ?>
+                    <div class="mx-2 d-flex justify-content-center gap-3">
+                        <a href="/destination/update/<?php echo e($destination->id); ?>" class="btn btn-primary mb-2">
+                            Update
+                        </a>
+                        <?php if(isset($favourite)): ?>
+                            <button id="favouriteRemove" type="button" class="btn btn-secondary mb-2">
+                                &#9829; Remove from favourite
+                            </button>
+                        <?php else: ?>
+                            <button id="favouriteAdd" type="button" class="btn btn-danger mb-2">
+                                &#9825; Add to favourite
+                            </button>
+                        <?php endif; ?>
+                    </div>
                 <?php endif; ?>
-            </div>
+            <?php endif; ?>
             <div class="d-flex justify-content-center mb-5 mt-4">
                 <a href="<?php echo e($destination->video); ?>" target="_blank" class="w-75 border">
                     <img class="w-100" src="<?php echo e('https://img.youtube.com/vi/' . $thumbnail . '/maxresdefault.jpg'); ?>"
@@ -88,7 +93,11 @@
 
             <span class="">
                 <h3>Our Reviews!</h3>
-                <a class="text-blue" style="cursor: pointer" onclick="ShowInstruction()">How to use this?</a>
+                <?php if(auth()->guard()->check()): ?>
+                    <?php if(!is_null(Auth::user()->is_admin)): ?>
+                        <a class="text-blue" style="cursor: pointer" onclick="ShowInstruction()">How to use this?</a>
+                    <?php endif; ?>
+                <?php endif; ?>
             </span>
 
             <div class="d-flex">
@@ -97,16 +106,29 @@
 
                         <?php if($reviews_count == 0): ?>
                             <div class="d-flex reviews m-1">
-                                <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
-                                <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
-                                <input style="width:100%" type="text" onkeydown="Transform(this)"
-                                    class="form-control border-0 dynamic-review">
+                                <?php if(auth()->guard()->check()): ?>
+                                    <?php if(!is_null(Auth::user()->is_admin)): ?>
+                                        <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
+                                        <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
+                                        <input style="width:100%" type="text" onkeydown="Transform(this)"
+                                        class="form-control border-0 dynamic-review">
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                                <?php if(auth()->guard()->check()): ?>
+                                    <?php if(empty(Auth::user()->is_admin)): ?>
+                                        <h6>No Reviews Yet.</h6>
+                                    <?php endif; ?>
+                                <?php endif; ?>
                             </div>
                         <?php else: ?>
                             <?php $__currentLoopData = $reviews; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <div class="d-flex reviews m-1">
-                                    <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
-                                    <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
+                                    <?php if(auth()->guard()->check()): ?>
+                                        <?php if(!is_null(Auth::user()->is_admin)): ?>
+                                            <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
+                                            <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
 
                                     
                                     <?php if($item->inputType == 'INPUT'): ?>
@@ -130,9 +152,13 @@
                         <?php endif; ?>
 
                     </div>
-                    <div class="w-100 mt-2">
-                        <button onclick="Save()" type="button" class="btn btn-primary" style="width: 100%">Save</button>
-                    </div>
+                    <?php if(auth()->guard()->check()): ?>
+                        <?php if(!is_null(Auth::user()->is_admin)): ?>
+                            <div class="w-100 mt-2">
+                                <button onclick="Save()" type="button" class="btn btn-primary" style="width: 100%">Save</button>
+                            </div>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
                 <span class="m-5"></span>
                 <div class="mapouter w-100">

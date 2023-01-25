@@ -5,8 +5,8 @@
     <style>
         body {
             /* background-image: url('https://wallpaperaccess.com/full/1510545.jpg'); */
-            background-image: url('https://wallpaperaccess.com/full/1510533.jpg');
-            /* background-image: url('https://wallpaperaccess.com/full/1510585.jpg'); */
+            /* background-image: url('https://wallpaperaccess.com/full/1510533.jpg'); */
+            background-image: url('https://wallpaperaccess.com/full/1210710.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-blend-mode: darken;
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="text-black">
             {{-- <h1>Search Destination</h1> --}}
-            <p class="mt-3" style="font-size: 40px; font-weight:bold" >Search Destination</p>
+            <p class="mt-3 text-white" style="font-size: 40px; font-weight:bold" >Search Destination</p>
             <form action="{{ route('search_dest') }}" method="GET">
                 @csrf
                 <div class="input-group mb-4">

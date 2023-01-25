@@ -32,7 +32,7 @@
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/favourite">Destination</a>
+                        <a class="nav-link" href="/favourite">Favorite</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/search">Search</a>
@@ -40,10 +40,23 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo e(route('loginpage')); ?>">Login</a>
-                    </li>
                 </ul>
+            </div>
+            <div class="d-flex justify-content-end mr-4">
+                <li class="nav h5">
+                    <a class="btn btn-outline-secondary" href="<?php echo e(route('loginpage')); ?>">Login</a>
+                </li>
+
+                <?php if(auth()->guard()->check()): ?>
+                    <?php if(!is_null(Auth::user()->is_admin)): ?>
+                        <li class="nav h5 ml-3">
+                            <form action="<?php echo e(route('logout')); ?>" method="POST" class="btn btn-outline-danger">
+                                <?php echo csrf_field(); ?>
+                                <button class="dropdown-item">Log Out</button>
+                            </form>
+                        </li>
+                    <?php endif; ?>
+                <?php endif; ?>
             </div>
         </nav>
         </ul>

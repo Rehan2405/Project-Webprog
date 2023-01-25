@@ -32,7 +32,7 @@
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/favourite">Destination</a>
+                        <a class="nav-link" href="/favourite">Favorite</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/search">Search</a>
@@ -40,10 +40,23 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('loginpage') }}">Login</a>
-                    </li>
                 </ul>
+            </div>
+            <div class="d-flex justify-content-end mr-4">
+                <li class="nav h5">
+                    <a class="btn btn-outline-secondary" href="{{ route('loginpage') }}">Login</a>
+                </li>
+
+                @auth
+                    @if (!is_null(Auth::user()->is_admin))
+                        <li class="nav h5 ml-3">
+                            <form action="{{ route('logout') }}" method="POST" class="btn btn-outline-danger">
+                                @csrf
+                                <button class="dropdown-item">Log Out</button>
+                            </form>
+                        </li>
+                    @endif
+                @endauth
             </div>
         </nav>
         </ul>

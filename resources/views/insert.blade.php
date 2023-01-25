@@ -19,13 +19,19 @@
                             </div>
                         @enderror
                     </div>
-                    <div class="form-group">
-                        <label for="todolist">To do list</label>
-                        <input type="text" class="form-control" name="todolist" id="todolist" value="{{ isset($todolist->list) ? $todolist->list : '' }}">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="todolist" id="floatingInput" placeholder="To do List"
+                            value="{{ isset($todolist->list) ? $todolist->list : '' }}">
+                        <label for="floatingInput text-white">To do list</label>
+                        @error('todolist')
+                            <div class="invalid-feedback text-start mb-3">
+                                {{ $message }}
+                            </div>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1"
-                            class="form-label float-start text-white">Description</label>
+                            class="form-label float-start text-dark">Description</label>
                         <textarea class="form-control @error('desc') is-invalid @enderror" name="desc" id="exampleFormControlTextarea1"
                             rows="3"></textarea>
                         @error('desc')
@@ -64,7 +70,7 @@
                             </div>
                         @enderror
                     </div>
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Add Destination</button>
+                    <button class="w-100 btn btn-lg btn-primary mb-4" type="submit">Add Destination</button>
                 </form>
         </div>
         </main>
