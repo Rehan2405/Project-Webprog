@@ -13,6 +13,11 @@
         <div id="favorite" class="container justify-content-center d-flex flex-column mt-5">
             <h1 class="text-white">Favorite destinations</h1>
             <div class="row">
+                @if(Count($destinations) == 0)
+                    <h1 class="text-light">
+                        No Favorite Destination Added Yet!
+                    </h1>
+                @endif
                 @foreach ($destinations as $dest)
                     <div class="col-4 mb-4 order-1 mt-3">
                         <div class="card">

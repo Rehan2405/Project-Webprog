@@ -3,7 +3,7 @@
     <span class="mt-5"></span>
     <style>
         .add-btn {
-            color: aquamarine;
+            color: white;
             align-self: center;
             cursor: pointer;
         }
@@ -19,16 +19,16 @@
         }
 
         .reviews>input {
-            background-color: aquamarine;
+            background-color: white;
             transition: 0.3s
         }
 
         .reviews:hover>input {
-            background-color: white;
+            background-color: aquamarine;
         }
 
         .reviews>span {
-            color: aquamarine;
+            color: white;
             transition: 0.3s
         }
 
@@ -51,20 +51,24 @@
                 <h1>{{ $destination->title }}</h1>
             </div>
             <br>
-            <div class="mx-2 d-flex justify-content-center gap-3">
-                <a href="/destination/update/{{ $destination->id }}" class="btn btn-primary mb-2">
-                    Update
-                </a>
-                @if (isset($favourite))
-                    <button id="favouriteRemove" type="button" class="btn btn-secondary mb-2">
-                        &#9829; Remove from favourite
-                    </button>
-                @else
-                    <button id="favouriteAdd" type="button" class="btn btn-danger mb-2">
-                        &#9825; Add to favourite
-                    </button>
+            @auth
+                @if(!is_null(Auth::user()->is_admin))
+                    <div class="mx-2 d-flex justify-content-center gap-3">
+                        <a href="/destination/update/{{ $destination->id }}" class="btn btn-primary mb-2">
+                            Update
+                        </a>
+                        @if (isset($favourite))
+                            <button id="favouriteRemove" type="button" class="btn btn-secondary mb-2">
+                                &#9829; Remove from favourite
+                            </button>
+                        @else
+                            <button id="favouriteAdd" type="button" class="btn btn-danger mb-2">
+                                &#9825; Add to favourite
+                            </button>
+                        @endif
+                    </div>
                 @endif
-            </div>
+            @endauth
             <div class="d-flex justify-content-center mb-5 mt-4">
                 <a href="{{ $destination->video }}" target="_blank" class="w-75 border">
                     <img class="w-100" src="{{ 'https://img.youtube.com/vi/' . $thumbnail . '/maxresdefault.jpg' }}"
@@ -99,7 +103,11 @@
 
             <span class="">
                 <h3>Our Reviews!</h3>
-                <a class="text-blue" style="cursor: pointer" onclick="ShowInstruction()">How to use this?</a>
+                @auth
+                    @if(!is_null(Auth::user()->is_admin))
+                        <a class="text-blue" style="cursor: pointer" onclick="ShowInstruction()">How to use this?</a>
+                    @endif
+                @endauth
             </span>
 
             <div class="d-flex">
@@ -108,16 +116,29 @@
 
                         @if ($reviews_count == 0)
                             <div class="d-flex reviews m-1">
-                                <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
-                                <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
-                                <input style="width:100%" type="text" onkeydown="Transform(this)"
-                                    class="form-control border-0 dynamic-review">
+                                @auth
+                                    @if(!is_null(Auth::user()->is_admin))
+                                        <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
+                                        <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
+                                        <input style="width:100%" type="text" onkeydown="Transform(this)"
+                                        class="form-control border-0 dynamic-review">
+                                    @endif
+                                @endauth
+                                @auth
+                                    @if(empty(Auth::user()->is_admin))
+                                        <h6>No Reviews Yet.</h6>
+                                    @endif
+                                @endauth
                             </div>
                         @else
                             @foreach ($reviews as $item)
                                 <div class="d-flex reviews m-1">
-                                    <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
-                                    <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
+                                    @auth
+                                        @if(!is_null(Auth::user()->is_admin))
+                                            <span onclick="Duplicate()" class="mr-3 add-btn">&#10010;</span>
+                                            <span onclick="Remove(this)" class="mr-3 del-btn">&#10008;</span>
+                                        @endif
+                                    @endauth
 
                                     {{-- For Input Type --}}
                                     @if ($item->inputType == 'INPUT')
@@ -140,9 +161,13 @@
                         @endif
 
                     </div>
-                    <div class="w-100 mt-2">
-                        <button onclick="Save()" type="button" class="btn btn-primary" style="width: 100%">Save</button>
-                    </div>
+                    @auth
+                        @if(!is_null(Auth::user()->is_admin))
+                            <div class="w-100 mt-2">
+                                <button onclick="Save()" type="button" class="btn btn-primary" style="width: 100%">Save</button>
+                            </div>
+                        @endif
+                    @endauth
                 </div>
                 <span class="m-5"></span>
                 <div class="mapouter w-100">

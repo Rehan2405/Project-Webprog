@@ -25,20 +25,20 @@ Route::get('/search', [SearchController::class, 'search'])->name('search');
 Route::get('/search-destination', [SearchController::class, 'search_dest'])->name('search_dest');
 // Detail Section
 Route::get('/detail/{id}', [DetailController::class, 'index']);
-Route::get('/SaveReview', [DetailController::class, 'Save']);
-Route::get('/DeleteReview', [DetailController::class, 'Delete']);
+Route::get('/SaveReview', [DetailController::class, 'Save'])->middleware('Admin');
+Route::get('/DeleteReview', [DetailController::class, 'Delete'])->middleware('Admin');
 
 // insert destination
-Route::get('/insert', [InsertController::class, 'create']);
-Route::post('/insert', [InsertController::class, 'add']);
+Route::get('/insert', [InsertController::class, 'create'])->middleware('Admin');
+Route::post('/insert', [InsertController::class, 'add'])->middleware('Admin');
 
 // update destination
-Route::get('/destination/update/{id}', [destinationcontroller::class, 'Edit'])->name('edit');
-Route::put('/destination/update/{id}', [destinationcontroller::class, 'Update']);
+Route::get('/destination/update/{id}', [destinationcontroller::class, 'Edit'])->middleware('Admin')->name('edit');
+Route::put('/destination/update/{id}', [destinationcontroller::class, 'Update'])->middleware('Admin');
 
 // favorite section
-Route::get('/AddFavourite', [FavoriteController::class, 'Save']);
-Route::get('/DeleteFavourite', [FavoriteController::class, 'Delete']);
+Route::get('/AddFavourite', [FavoriteController::class, 'Save'])->middleware('Admin');
+Route::get('/DeleteFavourite', [FavoriteController::class, 'Delete'])->middleware('Admin');
 
 Route::get('/about', [FavoriteController::class, 'about'])->name('about');
 Route::get('/favourite', [FavoriteController::class, 'destination'])->name('favourite');
@@ -47,7 +47,3 @@ Route::get('/favourite', [FavoriteController::class, 'destination'])->name('favo
 Auth::routes();
 
 Route::get('/home', [destinationcontroller::class, 'dest'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

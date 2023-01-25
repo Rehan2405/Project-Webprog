@@ -42,7 +42,14 @@
             <div class="text-white">
                 <h1>Latest Post</h1>
             </div>
-            <<div class="row">
+            <?php if(auth()->guard()->check()): ?>
+                <?php if(!is_null(Auth::user()->is_admin)): ?>
+                    <a href="/insert">
+                        <button type="button" class="btn btn-danger mb-2">&#x2B; Add Destination</button>
+                    </a>
+                <?php endif; ?>
+            <?php endif; ?>
+            <div class="row">
                 <?php $__currentLoopData = $destinations; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $dest): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <div class="col-4 mb-4 order-1 mt-3">
                         <div class="card">
