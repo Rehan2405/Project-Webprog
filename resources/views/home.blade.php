@@ -19,7 +19,7 @@
     </style>
 
     <body>
-        {{dd(Auth::user()->is_admin)}}
+        {{-- {{dd(Auth::user()->is_admin)}} --}}
         <!-- Hero Area -->
         <div class="container hero-area">
             <div class="d-flex text justify-content-center">

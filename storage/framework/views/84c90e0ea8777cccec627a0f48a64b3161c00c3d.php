@@ -1,12 +1,12 @@
-<?php $__env->startSection('content', 'home'); ?>
+<?php $__env->startSection('content', 'login'); ?>
 
 <?php $__env->startSection('body'); ?>
-<img src="<?php echo e(asset('images/welcome.jpg')); ?>" style="height:100vh; width:2000px" alt="">
+<img src="https://wallpaperaccess.com/full/1124103.jpg" style="height:100vh; width:2000px" alt="">
     <div class="d-flex align-items-center justify-content-center p-2">
         <div class="position-absolute top-50 start-50 translate-middle">
             <div class="text-white">
                 <div class="row justify-content-center">
-                        <div class="card" style="background-color: rgba(245, 183, 177)">
+                        <div class="card" style="background-color: rgba(255, 160, 122, 1)">
                             <div class="card-header text-center" style="font-size: 30px; font-weight: bold">Sign In</div>
                             <div class="card-body">
                                 <form method="POST" action="<?php echo e(route('login')); ?>">
@@ -81,11 +81,6 @@ unset($__errorArgs, $__bag); ?>
                                     <div class="d-grid mb-4 mt-3">
                                         <button type="submit" class="btn btn-danger block">Sign In</button>
                                     </div>
-
-                                    <p class="text-center mt-4">
-                                        Not register yet?
-                                        <a href="<?php echo e(route('register')); ?>">Register here</a>
-                                    </p>
                                 </form>
                             </div>
                         </div>
