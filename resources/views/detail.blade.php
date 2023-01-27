@@ -205,7 +205,7 @@
                     '<br>' +
                     '<textarea class="form-control">This is a sample text.</textarea>' +
                     '<hr>' +
-                    '<span><strong>/img + imageurl</strong> -> Used to create an img element</span>' +
+                    '<span><strong>/image + imageurl</strong> -> Used to create an img element</span>' +
                     '<br>' +
                     '<img style="height:200px" src="https://img.pokemondb.net/artwork/large/bulbasaur.jpg"></img>' +
                     '<hr>' +
